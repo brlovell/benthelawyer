@@ -13,12 +13,12 @@ experience:
     org: "New Mexico Department of Justice"
     desc: "Worked on fintech consumer protection, TILA, multi-district litigations, anti-trust and Unfair Practices Act claims."
 education:
-  - year: "2024"
+  - year: "2023"
     degree: "Juris Doctor"
-    org: "University of Colorado Law School"
-  - year: "2010"
-    degree: "Bachelor of Arts in Music"
-    org: "University of Montana"
+    org: "University of Denver Sturm College of Law"
+  - year: "2011"
+    degree: "Bachelor of Music - Classical Guitar Performance"
+    org: "University of Minnesota"
 ---
 
 Based in the high desert of Santa Fe, New Mexico, I’ve spent my career navigating two seemingly separate worlds: the high-stakes arena of adversarial litigation and the rapidly evolving frontier of artificial intelligence.

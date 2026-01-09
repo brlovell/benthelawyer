@@ -2,12 +2,11 @@
 title: "Get in Touch"
 type: "page"
 contactInfo:
-  firmName: "Lovell & Partners"
-  address: "123 Palace Ave, Suite 200<br/>Santa Fe, NM 87501"
-  email: "ben@benthelawyer.com"
-  twitter: "#"
+  firmName: "Make Right Law"
+  address: "200 W De Vargas St, Suite 3<br/>Santa Fe, NM 87501"
+  email: "ben@benthelawyer.com<br/>ben@makerightlaw.com"
   linkedin: "#"
   github: "#"
 ---
 
-Whether you're a prospective client, a fellow researcher, or just curious about the future of law, I'd love to hear from you.
+Whether you're a prospective client or just a curious person, I'd love to hear from you.
