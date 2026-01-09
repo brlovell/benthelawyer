@@ -1,0 +1,79 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import Search from '../../components/Search.astro';
+
+const posts = (await getCollection('blog'))
+  .filter((post) => post.data.published)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<Layout title="Writing & Research | Ben Lovell">
+  <main class="bg-canvas min-h-screen py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- Header -->
+      <div class="mb-12 text-center max-w-3xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-charcoal mb-6">Writing & Research</h1>
+        <p class="text-xl text-charcoal/70 font-body mb-10">
+          Exploring the intersection of tort law, artificial intelligence, and justice in the digital age.
+        </p>
+        
+        <Search />
+      </div>
+
+      <!-- Posts Grid (Bookshelf Layout) -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16" data-pagefind-body>
+        {posts.map((post) => (
+          <a href={`/blog/${post.id}/`} class="group block h-full">
+            <article class="relative flex flex-col h-full border-b-2 border-charcoal/10 pb-4 hover:border-adobe transition-colors">
+              <!-- Spine Visual -->
+              <div class="absolute -left-4 top-0 bottom-4 w-1 bg-gradient-to-b from-sage to-sky opacity-0 group-hover:opacity-100 transition-opacity rounded-sm"></div>
+              
+              <div class="p-2 flex flex-col h-full">
+                <!-- Meta -->
+                <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider mb-3 text-sage">
+                  <time datetime={post.data.pubDate.toISOString()}>
+                    {post.data.pubDate.toLocaleDateString('en-us', {
+                      year: 'numeric',
+                      month: 'short',
+                      day: 'numeric',
+                    })}
+                  </time>
+                  {post.data.tags.length > 0 && (
+                    <>
+                      <span class="text-charcoal/40">&bull;</span>
+                      <span>{post.data.tags[0]}</span>
+                    </>
+                  )}
+                  {post.data.series && (
+                    <>
+                      <span class="text-charcoal/40">&bull;</span>
+                      <span class="text-adobe font-bold">Series: {post.data.series}</span>
+                    </>
+                  )}
+                </div>
+
+                <!-- Title -->
+                <h2 class="text-2xl font-bold text-charcoal mb-3 group-hover:text-adobe transition-colors leading-tight">
+                  {post.data.title}
+                </h2>
+
+                <!-- Description -->
+                <p class="text-charcoal/70 mb-4 flex-grow leading-relaxed">
+                  {post.data.description}
+                </p>
+
+                <!-- Link Visual -->
+                <div class="text-sky font-medium text-sm flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                  Read <span class="sr-only">{post.data.title}</span> &rarr;
+                </div>
+              </div>
+            </article>
+          </a>
+        ))}
+      </div>
+
+    </div>
+  </main>
+</Layout>

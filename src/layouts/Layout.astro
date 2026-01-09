@@ -1,0 +1,41 @@
+---
+import '../styles/global.css';
+import '@fontsource/outfit';
+import '@fontsource/atkinson-hyperlegible';
+import Navigation from '../components/Navigation.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Basics</title>
+	</head>
+	<body>
+    <Navigation />
+		<slot />
+    
+    <footer class="bg-charcoal text-white py-12 px-6 mt-auto">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center opacity-70 text-sm">
+        <p>&copy; {new Date().getFullYear()} Ben Lovell. All rights reserved.</p>
+        <div class="flex gap-6 mt-4 md:mt-0">
+          <a href="#" class="hover:text-adobe transition-colors">Twitter</a>
+          <a href="#" class="hover:text-adobe transition-colors">LinkedIn</a>
+          <a href="#" class="hover:text-adobe transition-colors">GitHub</a>
+        </div>
+      </div>
+    </footer>
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+</style>

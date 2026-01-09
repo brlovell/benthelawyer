@@ -1,0 +1,52 @@
+---
+import SearchIcon from './SearchIcon.astro';
+---
+
+<div id="search" class="w-full max-w-2xl mx-auto mb-12">
+  <div class="relative">
+    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+      <SearchIcon class="w-5 h-5 text-stone-400" />
+    </div>
+    <!-- Pagefind will mount here -->
+    <div id="pagefind-container" class="pagefind-custom"></div>
+  </div>
+</div>
+
+<style is:global>
+  :root {
+    --pagefind-ui-primary: var(--color-adobe);
+    --pagefind-ui-text: var(--color-charcoal);
+    --pagefind-ui-background: transparent;
+    --pagefind-ui-border: var(--color-sage);
+    --pagefind-ui-tag: #eeeeee;
+    --pagefind-ui-border-width: 2px;
+    --pagefind-ui-border-radius: 1rem;
+    --pagefind-ui-font: var(--font-body);
+  }
+
+  .pagefind-custom .pagefind-ui__search-input {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+  }
+
+  .pagefind-custom .pagefind-ui__result-link {
+    color: var(--color-adobe);
+    font-weight: 700;
+    transition: color 0.2s;
+  }
+
+  .pagefind-custom .pagefind-ui__result-link:hover {
+    color: var(--color-sky);
+  }
+</style>
+
+<script is:inline>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({ 
+      element: "#pagefind-container", 
+      showSubResults: true,
+      baseUrl: "/",
+      bundlePath: "/_pagefind/"
+    });
+  });
+</script>

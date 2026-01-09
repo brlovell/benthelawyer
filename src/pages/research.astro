@@ -1,0 +1,49 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getEntry, render } from 'astro:content';
+import Search from '../components/Search.astro';
+
+const researchPage = await getEntry('pages', 'research');
+const { Content } = await render(researchPage);
+const { data } = researchPage;
+const papers = data.papers || [];
+---
+
+<Layout title="Research & Analysis | Ben Lovell">
+  <main class="bg-canvas min-h-screen py-20 px-6">
+    <div class="max-w-4xl mx-auto">
+      <header class="mb-16 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-charcoal mb-6">{data.title}</h1>
+        <div class="text-xl text-charcoal/70 font-body leading-relaxed max-w-2xl mx-auto mb-10">
+          <Content />
+        </div>
+        
+        <Search />
+      </header>
+
+      <div class="grid md:grid-cols-2 gap-x-12 gap-y-16" data-pagefind-body>
+        {papers.map((paper) => (
+          <article class="group relative flex flex-col h-full border-b-2 border-charcoal/10 pb-4 hover:border-adobe transition-colors">
+            <!-- Book Spine Visual Stub -->
+            <div class="absolute -left-4 top-0 bottom-4 w-1 bg-gradient-to-b from-sage to-sky opacity-0 group-hover:opacity-100 transition-opacity rounded-sm"></div>
+            
+            <div class="flex-grow">
+               <div class="mb-3 flex items-center justify-between text-sm">
+                  <span class="font-bold text-adobe uppercase tracking-wider">{paper.type}</span>
+                  <span class="text-charcoal/40 font-mono">{paper.date}</span>
+               </div>
+               <h2 class="text-2xl font-bold text-charcoal mb-4 group-hover:text-adobe transition-colors leading-tight">
+                  <a href="#" class="before:absolute before:inset-0">
+                     {paper.title}
+                  </a>
+               </h2>
+               <p class="text-charcoal/70 leading-relaxed">
+                  {paper.summary}
+               </p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </main>
+</Layout>

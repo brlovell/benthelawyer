@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-canvas: #FDF8FF;
+  /* Bone White/Canvas (Keep base) */
+
+  /* Sunset Palette */
+  --color-adobe: #E05C3E;
+  /* Fiery Orange/Sunset Red (More vibrant than Burnt Sienna) */
+  --color-sky: #6B4C9A;
+  /* Deep Purple/Indigo (Evening sky) */
+  --color-sage: #8A9A65;
+  /* Muted Green (Grounding element, slightly warmer) */
+  --color-charcoal: #2A1B30;
+  /* Deep Plum/Charcoal (Warmer dark text) */
+
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Atkinson Hyperlegible', sans-serif;
+
+  --animate-fade-in: fade-in 0.5s ease-out forwards;
+}
+
+/* Base styles for the Santa Fe Futurist look */
+@layer base {
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-charcoal);
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    color: var(--color-adobe);
+    /* Default headings to Adobe accent */
+  }
+}

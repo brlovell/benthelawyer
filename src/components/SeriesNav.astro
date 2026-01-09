@@ -1,0 +1,39 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+  series: string;
+  currentId: string;
+}
+
+const { series, currentId } = Astro.props;
+
+const allPosts = await getCollection('blog');
+const components = allPosts
+  .filter(post => post.data.series === series && post.data.published)
+  .sort((a, b) => (a.data.seriesOrder || 0) - (b.data.seriesOrder || 0));
+
+if (components.length <= 1) return null;
+---
+
+<div class="my-12 p-6 bg-sage/5 border-l-4 border-sage rounded-r-xl">
+  <h3 class="text-sm font-bold uppercase tracking-wider text-sage mb-4">Part of the Series: <span class="text-charcoal">{series}</span></h3>
+  <nav>
+    <ul class="space-y-3">
+      {components.map((post, index) => (
+        <li class="flex items-start gap-3">
+          <span class={`text-sm font-bold ${post.id === currentId ? 'text-adobe' : 'text-sage/40'}`}>
+            {index + 1}.
+          </span>
+          {post.id === currentId ? (
+            <span class="text-charcoal font-bold">{post.data.title} (You are here)</span>
+          ) : (
+            <a href={`/blog/${post.id}`} class="text-charcoal hover:text-adobe transition-colors">
+              {post.data.title}
+            </a>
+          )}
+        </li>
+      ))}
+    </ul>
+  </nav>
+</div>
