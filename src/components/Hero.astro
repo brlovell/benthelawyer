@@ -4,33 +4,47 @@ interface Props {
   subtitle?: string;
 }
 
-const { 
-  title = "Hi, I'm Ben, the lawyer.", 
-  subtitle = "I fight for people in the courtroom and explore how AI acts as a dutiful assistant to the practice of law." 
+const {
+  title = "Hi, I'm Ben, the lawyer.",
+  subtitle = "I fight for people in the courtroom and explore how AI acts as a dutiful assistant to the practice of law.",
 } = Astro.props;
 ---
 
 <div class="flex flex-col justify-center text-center md:text-left h-full">
   <!-- Friendly Greeting -->
   <div>
-    <span class="inline-block py-1 px-3 rounded-full bg-sage/10 text-sage font-bold text-sm tracking-widest uppercase mb-6">
+    <span
+      class="inline-block py-1 px-3 rounded-full bg-sage/10 text-sage font-bold text-sm tracking-widest uppercase mb-6"
+    >
       Ben Lovell
     </span>
   </div>
-  
-  <h1 class="text-5xl md:text-7xl font-bold mb-8 text-charcoal tracking-tight leading-tight">
+
+  <h1
+    class="text-5xl md:text-7xl font-bold mb-8 text-white tracking-tight leading-tight"
+  >
     {title}
   </h1>
-  
-  <p class="text-xl md:text-2xl text-charcoal/70 max-w-xl mb-10 leading-relaxed font-body">
+
+  <p
+    class="text-xl md:text-2xl text-white/90 max-w-xl mb-10 leading-relaxed font-body"
+  >
     {subtitle}
   </p>
-  
-  <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center">
-    <a href="/contact" class="px-8 py-4 bg-charcoal text-white font-bold rounded-2xl hover:bg-adobe transition-colors shadow-lg hover:shadow-xl">
+
+  <div
+    class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center"
+  >
+    <a
+      href="/contact"
+      class="px-8 py-4 bg-white text-charcoal font-bold rounded-2xl hover:bg-stone-100 transition-colors shadow-lg hover:shadow-xl"
+    >
       Say Hello
     </a>
-    <a href="/about" class="px-8 py-4 text-charcoal font-bold hover:text-adobe transition-colors">
+    <a
+      href="/about"
+      class="px-8 py-4 text-white font-bold hover:text-white/80 transition-colors"
+    >
       Read my story &rarr;
     </a>
   </div>

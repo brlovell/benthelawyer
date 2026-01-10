@@ -46,7 +46,7 @@ const pages = defineCollection({
 		contactInfo: z.object({
 			firmName: z.string(),
 			address: z.string(),
-			email: z.string(),
+			email: z.union([z.string(), z.array(z.string())]),
 			twitter: z.string().optional(),
 			linkedin: z.string().optional(),
 			github: z.string().optional()

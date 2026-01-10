@@ -1,8 +1,8 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { getEntry, render } from 'astro:content';
+import Layout from "../layouts/Layout.astro";
+import { getEntry, render } from "astro:content";
 
-const contactPage = await getEntry('pages', 'contact');
+const contactPage = await getEntry("pages", "contact");
 const { Content } = await render(contactPage);
 const { data } = contactPage;
 const contact = data.contactInfo || {};
@@ -11,7 +11,6 @@ const contact = data.contactInfo || {};
 <Layout>
   <main class="bg-canvas min-h-screen py-20 px-6">
     <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-16">
-      
       <!-- Contact Info -->
       <div>
         <h1 class="text-4xl font-bold text-charcoal mb-8">{data.title}</h1>
@@ -21,26 +20,85 @@ const contact = data.contactInfo || {};
 
         <div class="space-y-8">
           <div>
-            <h3 class="text-sm font-bold text-sage uppercase tracking-wider mb-2">Law Firm</h3>
+            <h3
+              class="text-sm font-bold text-sage uppercase tracking-wider mb-2"
+            >
+              Law Firm
+            </h3>
             <p class="text-charcoal font-bold text-lg">{contact.firmName}</p>
             <p class="text-charcoal/70" set:html={contact.address} />
           </div>
-          
+
           <div>
-            <h3 class="text-sm font-bold text-sage uppercase tracking-wider mb-2">Email</h3>
-            <a href={`mailto:${contact.email}`} class="text-adobe font-bold text-lg hover:underline">
-              {contact.email}
-            </a>
+            <h3
+              class="text-sm font-bold text-sage uppercase tracking-wider mb-2"
+            >
+              Email
+            </h3>
+            <div class="flex flex-col gap-1">
+              {
+                (Array.isArray(contact.email)
+                  ? contact.email
+                  : [contact.email]
+                ).map((email: string) => (
+                  <a
+                    href={`mailto:${email}`}
+                    class="text-adobe font-bold text-lg hover:underline block"
+                  >
+                    {email}
+                  </a>
+                ))
+              }
+            </div>
           </div>
 
           <div>
-             <h3 class="text-sm font-bold text-sage uppercase tracking-wider mb-2">Social</h3>
-             <div class="flex gap-4">
-               {contact.twitter && <a href={contact.twitter} class="text-charcoal/60 hover:text-sky transition-colors">Twitter/X</a>}
-               {contact.linkedin && <a href={contact.linkedin} class="text-charcoal/60 hover:text-sky transition-colors">LinkedIn</a>}
-               {contact.github && <a href={contact.github} class="text-charcoal/60 hover:text-sky transition-colors">GitHub</a>}
-             </div>
+            <h3
+              class="text-sm font-bold text-sage uppercase tracking-wider mb-2"
+            >
+              Social
+            </h3>
+            <div class="flex gap-4">
+              {
+                contact.twitter && (
+                  <a
+                    href={contact.twitter}
+                    class="text-charcoal/60 hover:text-sky transition-colors"
+                  >
+                    Twitter/X
+                  </a>
+                )
+              }
+              {
+                contact.linkedin && (
+                  <a
+                    href={contact.linkedin}
+                    class="text-charcoal/60 hover:text-sky transition-colors"
+                  >
+                    LinkedIn
+                  </a>
+                )
+              }
+              {
+                contact.github && (
+                  <a
+                    href={contact.github}
+                    class="text-charcoal/60 hover:text-sky transition-colors"
+                  >
+                    GitHub
+                  </a>
+                )
+              }
+            </div>
           </div>
+        </div>
+
+        <div class="mt-12">
+          <img
+            src="/images/business-card-cropped.png"
+            alt="Make Right Law Business Card"
+            class="w-full max-w-sm rounded-xl shadow-lg transform -rotate-2 hover:rotate-0 transition-transform duration-500"
+          />
         </div>
       </div>
 
@@ -48,23 +106,47 @@ const contact = data.contactInfo || {};
       <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-100">
         <form class="space-y-6">
           <div>
-            <label for="name" class="block text-sm font-bold text-charcoal mb-2">Name</label>
-            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg bg-stone-50 border border-stone-200 focus:border-adobe focus:ring-1 focus:ring-adobe outline-none transition-all" placeholder="Jane Doe" />
+            <label for="name" class="block text-sm font-bold text-charcoal mb-2"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              class="w-full px-4 py-3 rounded-lg bg-stone-50 border border-stone-200 focus:border-adobe focus:ring-1 focus:ring-adobe outline-none transition-all"
+              placeholder="Jane Doe"
+            />
           </div>
           <div>
-            <label for="email" class="block text-sm font-bold text-charcoal mb-2">Email</label>
-            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-stone-50 border border-stone-200 focus:border-adobe focus:ring-1 focus:ring-adobe outline-none transition-all" placeholder="jane@example.com" />
+            <label
+              for="email"
+              class="block text-sm font-bold text-charcoal mb-2">Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="w-full px-4 py-3 rounded-lg bg-stone-50 border border-stone-200 focus:border-adobe focus:ring-1 focus:ring-adobe outline-none transition-all"
+              placeholder="jane@example.com"
+            />
           </div>
           <div>
-            <label for="message" class="block text-sm font-bold text-charcoal mb-2">Message</label>
-            <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg bg-stone-50 border border-stone-200 focus:border-adobe focus:ring-1 focus:ring-adobe outline-none transition-all" placeholder="How can I help?"></textarea>
+            <label
+              for="message"
+              class="block text-sm font-bold text-charcoal mb-2">Message</label
+            >
+            <textarea
+              id="message"
+              rows="5"
+              class="w-full px-4 py-3 rounded-lg bg-stone-50 border border-stone-200 focus:border-adobe focus:ring-1 focus:ring-adobe outline-none transition-all"
+              placeholder="How can I help?"></textarea>
           </div>
-          <button type="submit" class="w-full bg-charcoal text-white font-bold py-4 rounded-lg hover:bg-adobe transition-colors">
+          <button
+            type="submit"
+            class="w-full bg-charcoal text-white font-bold py-4 rounded-lg hover:bg-adobe transition-colors"
+          >
             Send Message
           </button>
         </form>
       </div>
-
     </div>
   </main>
 </Layout>

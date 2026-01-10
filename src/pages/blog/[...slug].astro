@@ -1,10 +1,10 @@
 ---
-import { getCollection, render } from 'astro:content';
-import Layout from '../../layouts/Layout.astro';
-import SeriesNav from '../../components/SeriesNav.astro';
+import { getCollection, render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import SeriesNav from "../../components/SeriesNav.astro";
 
 export async function getStaticPaths() {
-	const posts = await getCollection('blog');
+	const posts = await getCollection("blog");
 	return posts.map((post) => ({
 		params: { slug: post.id },
 		props: post,
@@ -20,27 +20,37 @@ const { Content } = await render(post);
 		<article class="max-w-3xl mx-auto">
 			<!-- Back Link -->
 			<div class="mb-8">
-				<a href="/blog" class="text-adobe font-medium hover:underline">&larr; Back to Writing</a>
+				<a href="/blog" class="text-adobe font-medium hover:underline"
+					>&larr; Back to Writing</a
+				>
 			</div>
 
 			<!-- Header -->
 			<header class="mb-12 border-b border-sage/20 pb-8">
-				<div class="flex items-center gap-3 text-sm font-bold uppercase tracking-wider text-sage mb-4">
+				<div
+					class="flex items-center gap-3 text-sm font-bold uppercase tracking-wider text-sage mb-4"
+				>
 					<time datetime={post.data.pubDate.toISOString()}>
-						{post.data.pubDate.toLocaleDateString('en-us', {
-							year: 'numeric',
-							month: 'long',
-							day: 'numeric',
-						})}
+						{
+							post.data.pubDate.toLocaleDateString("en-us", {
+								year: "numeric",
+								month: "long",
+								day: "numeric",
+							})
+						}
 					</time>
-					{post.data.tags.map(tag => (
-						<>
-							<span>&bull;</span>
-							<span>{tag}</span>
-						</>
-					))}
+					{
+						post.data.tags.map((tag) => (
+							<>
+								<span>&bull;</span>
+								<span>{tag}</span>
+							</>
+						))
+					}
 				</div>
-				<h1 class="text-4xl md:text-5xl font-bold text-charcoal mb-6 leading-tight">
+				<h1
+					class="text-4xl md:text-5xl font-bold text-charcoal mb-6 leading-tight"
+				>
 					{post.data.title}
 				</h1>
 				<p class="text-xl text-charcoal/70 font-body leading-relaxed">
@@ -49,18 +59,24 @@ const { Content } = await render(post);
 			</header>
 
 			<!-- Content -->
-			<div class="prose prose-lg prose-stone max-w-none 
+			<div
+				class="prose prose-lg prose-stone max-w-none
 				prose-headings:font-bold prose-headings:text-charcoal prose-headings:font-heading
 				prose-p:text-charcoal/80 prose-p:leading-relaxed
 				prose-a:text-adobe prose-a:no-underline hover:prose-a:underline
 				prose-strong:text-charcoal prose-strong:font-bold
 				prose-blockquote:border-l-4 prose-blockquote:border-adobe prose-blockquote:bg-adobe/5 prose-blockquote:py-2 prose-blockquote:px-4 prose-blockquote:italic
 				prose-li:text-charcoal/80"
-        data-pagefind-body>
+				data-pagefind-body
+			>
 				<Content />
 			</div>
 
-      {post.data.series && <SeriesNav series={post.data.series} currentId={post.id} />}
+			{
+				post.data.series && (
+					<SeriesNav series={post.data.series} currentId={post.id} />
+				)
+			}
 		</article>
 	</main>
 </Layout>
