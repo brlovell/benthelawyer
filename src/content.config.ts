@@ -54,4 +54,16 @@ const pages = defineCollection({
 	}),
 });
 
-export const collections = { blog, pages };
+const research = defineCollection({
+	loader: glob({ pattern: '**/[^_]*.md', base: "./src/content/research" }),
+	schema: z.object({
+		title: z.string(),
+		summary: z.string(),
+		date: z.string(), // Keeping as string to match current format "Dec 2025", or could coerce to date
+		type: z.string(),
+		url: z.string().optional(),
+		published: z.boolean().default(true),
+	}),
+});
+
+export const collections = { blog, pages, research };
