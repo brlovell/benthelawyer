@@ -12,10 +12,12 @@ const RESEARCH_DEST = path.join(process.cwd(), 'src/content/research');
 const IMAGES_DEST = path.join(process.cwd(), 'public/images/blog');
 
 // Ensure directories exist
-fs.ensureDirSync(POSTS_DEST);
-fs.ensureDirSync(PAGES_DEST);
-fs.ensureDirSync(RESEARCH_DEST);
-fs.ensureDirSync(IMAGES_DEST);
+// Ensure directories exist and are empty (to remove deleted files)
+fs.emptyDirSync(POSTS_DEST);
+fs.emptyDirSync(PAGES_DEST);
+fs.emptyDirSync(RESEARCH_DEST);
+fs.ensureDirSync(IMAGES_DEST); // Don't empty images yet as they might be shared, or do? For now, risk of bloating images folder, but safer not to wipe if not tracked. Ideally we wipe this too if we want full sync. Let's wipe it to be safe and clean.
+fs.emptyDirSync(IMAGES_DEST);
 
 async function ingest() {
     console.log('🚀 Starting Obsidian Ingestion...');

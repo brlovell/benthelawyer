@@ -95,12 +95,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/AI Doom.md",
-                "mode": "source",
+                "file": "blog/Why you need to know how AI works.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "AI Doom"
+              "title": "Why you need to know how AI works"
             }
           }
         ],
@@ -268,18 +268,18 @@
   },
   "active": "6a7b72726a85622a",
   "lastOpenFiles": [
-    "pages/about.md",
-    "blog/AI Doom.md",
-    "blog/Why I Don't Use AI to Write.md",
-    "blog/Solving Mass Torts Problems with AI.md",
     "blog/Why I don't use AI to write..md",
+    "blog/Why I Don't Use AI to Write.md",
+    "blog/Analyze your Depositions and Learn.md",
+    "blog/Arc Flash Risk at Data Centers.md",
+    "blog/Context Engineering for Attorneys.md",
+    "blog/Basic AI Post Workflow.md",
+    "blog/AI Doom.md",
+    "pages/about.md",
+    "blog/Solving Mass Torts Problems with AI.md",
     "blog/Why you need to know how AI works.md",
     "research/Researching Traffic and Collision Data with AI.md",
     "blog/Untitled.md",
-    "blog/Analyze your Depositions and Learn.md",
-    "blog/Arc Flash Risk at Data Centers.md",
-    "blog/Basic AI Post Workflow.md",
-    "blog/Context Engineering for Attorneys.md",
     "blog/Creating Demonstratives with AI.md",
     "blog/Data Center Traffic Commercial Liability.md",
     "blog/Data Centers and AI's Impact on your Community.md",
