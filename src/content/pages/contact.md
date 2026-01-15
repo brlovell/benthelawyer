@@ -4,7 +4,7 @@ type: page
 contactInfo:
   firmName: Make Right Law
   address: '200 W De Vargas St, Suite 3<br/>Santa Fe, NM 87501'
-  email: ben@makerightlaw.com
+  email: ben@benthelawyer.com<br/>ben@makerightlaw.com
   linkedin: '#'
   github: '#'
 ---

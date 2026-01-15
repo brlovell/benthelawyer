@@ -1,6 +1,5 @@
 ---
 title: About
-description: The story of paths meeting in the high desert.
 type: page
 headerTitle: Advocate. Researcher. Teacher.
 experience:

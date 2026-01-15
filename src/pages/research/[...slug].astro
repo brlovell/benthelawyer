@@ -1,0 +1,43 @@
+---
+import { getCollection, render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+    const posts = await getCollection("research");
+    return posts.map((post) => ({
+        params: { slug: post.id },
+        props: post,
+    }));
+}
+
+const post = Astro.props;
+const { Content } = await render(post);
+---
+
+<Layout title={post.data.title} canonicalUrl={post.data.url}>
+    <main class="bg-canvas min-h-screen py-20 px-6">
+        <article class="max-w-3xl mx-auto">
+            <header class="mb-12 text-center">
+                <div
+                    class="mb-6 flex items-center justify-center gap-4 text-sm font-bold uppercase tracking-wider text-charcoal/50"
+                >
+                    <span class="text-adobe">{post.data.type}</span>
+                    <span>&bull;</span>
+                    <span>{post.data.date}</span>
+                </div>
+                <h1
+                    class="text-4xl md:text-5xl font-bold text-charcoal mb-6 leading-tight"
+                >
+                    {post.data.title}
+                </h1>
+                <p class="text-xl text-charcoal/70 leading-relaxed font-body">
+                    {post.data.summary}
+                </p>
+            </header>
+
+            <div class="prose prose-lg prose-charcoal mx-auto">
+                <Content />
+            </div>
+        </article>
+    </main>
+</Layout>

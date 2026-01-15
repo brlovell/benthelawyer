@@ -95,12 +95,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/Why you need to know how AI works.md",
+                "file": "pages/about.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Why you need to know how AI works"
+              "title": "about"
             }
           }
         ],
@@ -268,6 +268,8 @@
   },
   "active": "6a7b72726a85622a",
   "lastOpenFiles": [
+    "pages/contact.md",
+    "blog/Why you need to know how AI works.md",
     "blog/Why I don't use AI to write..md",
     "blog/Why I Don't Use AI to Write.md",
     "blog/Analyze your Depositions and Learn.md",
@@ -277,7 +279,6 @@
     "blog/AI Doom.md",
     "pages/about.md",
     "blog/Solving Mass Torts Problems with AI.md",
-    "blog/Why you need to know how AI works.md",
     "research/Researching Traffic and Collision Data with AI.md",
     "blog/Untitled.md",
     "blog/Creating Demonstratives with AI.md",
@@ -292,7 +293,6 @@
     "blog/Jury instructions help.md",
     "blog/Law Firm Research Lab.md",
     "blog/Law Firm Research Lab to Study Traffic Data.md",
-    "blog/Lawyer AI discussion.md",
-    "blog/Legal AI Vendor Problems.md"
+    "blog/Lawyer AI discussion.md"
   ]
 }

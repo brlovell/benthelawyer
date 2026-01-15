@@ -37,7 +37,7 @@ const papers = await getCollection('research');
                   <span class="text-charcoal/40 font-mono">{paper.data.date}</span>
                </div>
                <h2 class="text-2xl font-bold text-charcoal mb-4 group-hover:text-adobe transition-colors leading-tight">
-                  <a href={paper.data.url || "#"} class="before:absolute before:inset-0">
+                  <a href={paper.data.url || `/research/${paper.id}`} class="before:absolute before:inset-0">
                      {paper.data.title}
                   </a>
                </h2>

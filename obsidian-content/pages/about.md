@@ -1,24 +1,23 @@
 ---
-title: "About"
-description: "The story of paths meeting in the high desert."
-type: "page"
-headerTitle: "Advocate. Researcher. Teacher."
+title: About
+type: page
+headerTitle: Advocate. Researcher. Teacher.
 experience:
-  - year: "2025 - Present"
-    role: "Associate Attorney"
-    org: "Make Right Law"
-    desc: "Specializing in complex personal injury and torts litigation."
-  - year: "2024-25"
-    role: "Associate Attorney General, Consumer Protection Division"
-    org: "New Mexico Department of Justice"
-    desc: "Worked on fintech consumer protection, TILA, multi-district litigations, anti-trust and Unfair Practices Act claims."
+  - year: 2025 - Present
+    role: Associate Attorney
+    org: Make Right Law
+    desc: Specializing in complex personal injury and torts litigation.
+  - year: 2024-25
+    role: Associate Attorney General, Consumer Protection Division
+    org: New Mexico Department of Justice
+    desc: Worked on fintech consumer protection, TILA, multi-district litigations, anti-trust and Unfair Practices Act claims.
 education:
   - year: "2023"
-    degree: "Juris Doctor"
-    org: "University of Denver Sturm College of Law"
+    degree: Juris Doctor
+    org: University of Denver Sturm College of Law
   - year: "2011"
-    degree: "Bachelor of Music - Classical Guitar Performance"
-    org: "University of Minnesota"
+    degree: Bachelor of Music - Classical Guitar Performance
+    org: University of Minnesota
 ---
 
 I work as a plaintiff's trial attorney in New Mexico. I went to law school in Colorado but decided I wanted to practice in New Mexico because I like it here. I spent my time at law school competing in and coaching teams for mock trial tournaments; to me, there is no greater sport.
