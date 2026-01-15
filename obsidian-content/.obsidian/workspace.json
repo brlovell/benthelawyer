@@ -95,12 +95,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/about.md",
-                "mode": "preview",
+                "file": "pages/contact.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "about"
+              "title": "contact"
             }
           }
         ],
@@ -268,6 +268,7 @@
   },
   "active": "6a7b72726a85622a",
   "lastOpenFiles": [
+    "pages/about.md",
     "pages/contact.md",
     "blog/Why you need to know how AI works.md",
     "blog/Why I don't use AI to write..md",
@@ -277,7 +278,6 @@
     "blog/Context Engineering for Attorneys.md",
     "blog/Basic AI Post Workflow.md",
     "blog/AI Doom.md",
-    "pages/about.md",
     "blog/Solving Mass Torts Problems with AI.md",
     "research/Researching Traffic and Collision Data with AI.md",
     "blog/Untitled.md",

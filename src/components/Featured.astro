@@ -1,65 +1,104 @@
 ---
+import { getCollection } from "astro:content";
+
+// Fetch collections
+const blogPosts = await getCollection("blog", ({ data }) => data.published);
+const researchPapers = await getCollection(
+  "research",
+  ({ data }) => data.published,
+);
+
+// Normalize and merge
+const allContent = [
+  ...blogPosts.map((post) => ({
+    title: post.data.title,
+    url: `/blog/${post.id}`,
+    date: post.data.pubDate, // Already a Date object
+    type: "Blog Post", // Or use tags?
+    summary: post.data.description,
+    displayType: "Blog Post",
+    colorClass: "text-adobe", // simplified for now
+  })),
+  ...researchPapers.map((paper) => {
+    // Parse partial date strings like "Jan 2026" or "2025"
+    const dateStr = paper.data.date;
+    const dateObj = new Date(dateStr);
+    // Fallback if invalid date string (e.g. just a year might default to Jan 1)
+
+    return {
+      title: paper.data.title,
+      url: paper.data.url || `/research/${paper.id}`,
+      date: isNaN(dateObj.getTime()) ? new Date() : dateObj,
+      type: paper.data.type,
+      summary: paper.data.summary,
+      displayType: paper.data.type,
+      colorClass: "text-sky", // simplified
+    };
+  }),
+];
+
+// Sort by date descending
+allContent.sort((a, b) => b.date.valueOf() - a.date.valueOf());
+
+// Take top 3
+const featured = allContent.slice(0, 3);
 ---
 
 <section class="py-20 px-6 bg-canvas">
   <div class="max-w-6xl mx-auto">
     <div class="flex items-end justify-between mb-12">
       <h2 class="text-4xl font-bold text-charcoal">Featured Work</h2>
-      <a href="/research" class="text-adobe font-medium hover:underline hidden md:block">View Archives &rarr;</a>
+      <a
+        href="/research"
+        class="text-adobe font-medium hover:underline hidden md:block"
+        >View Archives &rarr;</a
+      >
     </div>
 
     <div class="grid md:grid-cols-3 gap-8">
-      <!-- Card 1: Research Paper -->
-      <article class="bg-white p-8 rounded-2xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow group">
-        <span class="text-xs font-bold tracking-wider text-sky uppercase mb-2 block">Research Paper</span>
-        <h3 class="text-2xl font-bold mb-3 group-hover:text-adobe transition-colors">
-          <a href="#">The Ethics of Algorithmic Liability</a>
-        </h3>
-        <p class="text-charcoal/70 mb-6 leading-relaxed">
-          Exploring how current tort law applies to autonomous agents in high-stakes environments.
-        </p>
-        <div class="flex items-center gap-2 text-sm text-charcoal/50">
-          <span>Dec 2025</span>
-          <span>&bull;</span>
-          <span>15 min read</span>
-        </div>
-      </article>
-
-      <!-- Card 2: YouTube Video -->
-      <article class="bg-white p-8 rounded-2xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow group">
-        <span class="text-xs font-bold tracking-wider text-adobe uppercase mb-2 block">New Video</span>
-        <h3 class="text-2xl font-bold mb-3 group-hover:text-adobe transition-colors">
-          <a href="#">AI in the Courtroom: A Practical Guide</a>
-        </h3>
-        <p class="text-charcoal/70 mb-6 leading-relaxed">
-          How modern litigators are using LLMs to summarize discovery without breaking privilege.
-        </p>
-        <div class="flex items-center gap-2 text-sm text-charcoal/50">
-          <span>Nov 2025</span>
-          <span>&bull;</span>
-          <span>Video</span>
-        </div>
-      </article>
-
-      <!-- Card 3: Case Study -->
-      <article class="bg-white p-8 rounded-2xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow group">
-        <span class="text-xs font-bold tracking-wider text-sage uppercase mb-2 block">Case Study</span>
-        <h3 class="text-2xl font-bold mb-3 group-hover:text-adobe transition-colors">
-          <a href="#">Doe v. TechCorp</a>
-        </h3>
-        <p class="text-charcoal/70 mb-6 leading-relaxed">
-          Setting a precedent for data privacy in personal injury claims involving wearable tech.
-        </p>
-        <div class="flex items-center gap-2 text-sm text-charcoal/50">
-          <span>Oct 2025</span>
-          <span>&bull;</span>
-          <span>Legal Analysis</span>
-        </div>
-      </article>
+      {
+        featured.map((item) => (
+          <article class="bg-white p-8 rounded-2xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow group flex flex-col h-full">
+            <span
+              class={`text-xs font-bold tracking-wider uppercase mb-2 block ${item.colorClass}`}
+            >
+              {item.displayType}
+            </span>
+            <h3 class="text-2xl font-bold mb-3 group-hover:text-adobe transition-colors leading-tight">
+              <a
+                href={item.url}
+                target={item.url.startsWith("http") ? "_blank" : "_self"}
+                rel={
+                  item.url.startsWith("http")
+                    ? "noopener noreferrer"
+                    : undefined
+                }
+              >
+                {item.title}
+              </a>
+            </h3>
+            <p class="text-charcoal/70 mb-6 leading-relaxed flex-grow">
+              {item.summary}
+            </p>
+            <div class="flex items-center gap-2 text-sm text-charcoal/50 mt-auto">
+              <span>
+                {item.date.toLocaleDateString("en-US", {
+                  month: "short",
+                  year: "numeric",
+                })}
+              </span>
+              <span>&bull;</span>
+              <span>Read More</span>
+            </div>
+          </article>
+        ))
+      }
     </div>
-    
+
     <div class="mt-8 md:hidden text-center">
-        <a href="/research" class="text-adobe font-medium hover:underline">View Archives &rarr;</a>
+      <a href="/research" class="text-adobe font-medium hover:underline"
+        >View Archives &rarr;</a
+      >
     </div>
   </div>
 </section>
