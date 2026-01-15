@@ -1,5 +1,5 @@
 {
-  "name": "src-temp",
+  "name": "benthelawyer",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,6 +10,8 @@
     "ingest": "tsx scripts/ingest-obsidian.ts"
   },
   "dependencies": {
+    "@astrojs/rss": "^4.0.14",
+    "@astrojs/sitemap": "^3.6.1",
     "@fontsource/atkinson-hyperlegible": "^5.2.8",
     "@fontsource/outfit": "^5.2.8",
     "@tailwindcss/vite": "^4.1.18",

@@ -3,9 +3,23 @@ import "../styles/global.css";
 import "@fontsource/outfit";
 import "@fontsource/atkinson-hyperlegible";
 import Navigation from "../components/Navigation.astro";
-const { title, canonicalUrl } = Astro.props;
+
+interface Props {
+	title: string;
+	description?: string;
+	canonicalUrl?: string;
+	image?: string;
+}
+
+const {
+	title,
+	description = "Ben Lovell - Advocate, Researcher, Teacher. A plaintiff's trial attorney exploring the intersection of law and AI.",
+	canonicalUrl,
+	image = "/images/DSC07328.JPG",
+} = Astro.props;
 
 const canonical = canonicalUrl || Astro.url.href;
+const ogImage = new URL(image, Astro.site).href;
 ---
 
 <!doctype html>
@@ -13,11 +27,33 @@ const canonical = canonicalUrl || Astro.url.href;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content={description} />
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self';"
+		/>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={canonical} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={ogImage} />
+
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:url" content={canonical} />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={ogImage} />
+
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="manifest" href="/manifest.webmanifest" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="canonical" href={canonical} />
 		<title>{title}</title>
 	</head>
+
 	<body>
 		<Navigation />
 		<slot />
@@ -36,14 +72,11 @@ const canonical = canonicalUrl || Astro.url.href;
 						target="_blank"
 						rel="noopener noreferrer">Substack</a
 					>
-					<a href="#" class="hover:text-adobe transition-colors"
-						>Twitter</a
-					>
-					<a href="#" class="hover:text-adobe transition-colors"
-						>LinkedIn</a
-					>
-					<a href="#" class="hover:text-adobe transition-colors"
-						>GitHub</a
+					<a
+						href="/rss.xml"
+						class="hover:text-adobe transition-colors"
+						target="_blank"
+						rel="noopener noreferrer">RSS</a
 					>
 				</div>
 			</div>

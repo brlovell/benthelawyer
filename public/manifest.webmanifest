@@ -1,0 +1,16 @@
+{
+    "name": "Ben, the Lawyer",
+    "short_name": "BenTheLawyer",
+    "description": "Advocate, Researcher, Teacher - A plaintiff's trial attorney exploring the intersection of law and AI.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#FFFBF5",
+    "theme_color": "#1E1E1E",
+    "icons": [
+        {
+            "src": "/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ]
+}
