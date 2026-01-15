@@ -1,60 +1,83 @@
 ---
 const links = [
-  { text: 'About', href: '/about' },
-  { text: 'Research', href: '/research' },
-  { text: 'Blog', href: '/blog' },
-  { text: 'Contact', href: '/contact' },
+  { text: "About", href: "/about" },
+  { text: "Research", href: "/research" },
+  { text: "Blog", href: "/blog" },
+  { text: "Newsletter", href: "https://benthelawyer.substack.com" },
+  { text: "Contact", href: "/contact" },
 ];
 ---
 
-<nav class="sticky top-0 z-50 w-full bg-canvas/80 backdrop-blur-md border-b border-stone-200/50">
+<nav
+  class="sticky top-0 z-50 w-full bg-canvas/80 backdrop-blur-md border-b border-stone-200/50"
+>
   <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-    
     <!-- Logo -->
     <a href="/" class="text-2xl font-bold text-charcoal tracking-tight group">
-      BenThe<span class="text-adobe group-hover:text-sage transition-colors">Lawyer</span>
+      Ben, The <span class="text-adobe group-hover:text-sage transition-colors"
+        >Lawyer</span
+      >
     </a>
 
     <!-- Desktop Menu -->
     <div class="hidden md:flex items-center gap-8">
-      {links.map(link => (
-        <a 
-          href={link.href} 
-          class="text-sm font-bold uppercase tracking-wider text-charcoal/70 hover:text-adobe transition-colors"
-        >
-          {link.text}
-        </a>
-      ))}
+      {
+        links.map((link) => (
+          <a
+            href={link.href}
+            class="text-sm font-bold uppercase tracking-wider text-charcoal/70 hover:text-adobe transition-colors"
+          >
+            {link.text}
+          </a>
+        ))
+      }
     </div>
 
     <!-- Mobile Menu Button (Hamburger) -->
-    <button id="mobile-menu-btn" class="md:hidden text-charcoal focus:outline-none p-2">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+    <button
+      id="mobile-menu-btn"
+      class="md:hidden text-charcoal focus:outline-none p-2"
+    >
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
       </svg>
     </button>
   </div>
 
   <!-- Mobile Menu Dropdown -->
-  <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-200 absolute w-full left-0 top-20 shadow-lg">
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden bg-white border-b border-stone-200 absolute w-full left-0 top-20 shadow-lg"
+  >
     <div class="flex flex-col p-6 space-y-4">
-      {links.map(link => (
-        <a 
-          href={link.href} 
-          class="text-lg font-bold text-charcoal hover:text-adobe transition-colors"
-        >
-          {link.text}
-        </a>
-      ))}
+      {
+        links.map((link) => (
+          <a
+            href={link.href}
+            class="text-lg font-bold text-charcoal hover:text-adobe transition-colors"
+          >
+            {link.text}
+          </a>
+        ))
+      }
     </div>
   </div>
 </nav>
 
 <script>
-  const btn = document.getElementById('mobile-menu-btn');
-  const menu = document.getElementById('mobile-menu');
+  const btn = document.getElementById("mobile-menu-btn");
+  const menu = document.getElementById("mobile-menu");
 
-  btn?.addEventListener('click', () => {
-    menu?.classList.toggle('hidden');
+  btn?.addEventListener("click", () => {
+    menu?.classList.toggle("hidden");
   });
 </script>

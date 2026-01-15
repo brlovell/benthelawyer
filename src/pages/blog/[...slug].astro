@@ -56,6 +56,30 @@ const { Content } = await render(post);
 				<p class="text-xl text-charcoal/70 font-body leading-relaxed">
 					{post.data.description}
 				</p>
+
+				{
+					post.data.substackUrl && (
+						<div class="mt-6">
+							<a
+								href={post.data.substackUrl}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="inline-flex items-center gap-2 px-4 py-2 bg-[#FF6719] text-white text-sm font-bold rounded-full hover:bg-[#FF6719]/90 transition-colors"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									viewBox="0 0 24 24"
+									fill="currentColor"
+								>
+									<path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z" />
+								</svg>
+								Read on Substack
+							</a>
+						</div>
+					)
+				}
 			</header>
 
 			<!-- Content -->

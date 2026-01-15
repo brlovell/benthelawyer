@@ -1,13 +1,12 @@
 ---
-title: "Researching Traffic and Collision Data with AI"
-description: "Designing and building research tools with to help answer questions about our cases with the help of AI."
-pubDate: 2026-01-06
+title: Building a system to study traffic data
+summary: >-
+  Have truck or car crashes increased around rural data center construction
+  sites? I build research software to investigate.
+date: Sep 2025
+type: Op-Ed
 published: true
-tags: ["AI", "Truck Crashes", "Data Centers", "Law Firm Research Lab"]
-series: "Law Firm Research Lab"
-seriesOrder: 2
 ---
-
 
 TO: Readers
 FROM: Ben Lovell
@@ -83,9 +82,9 @@ interpretation: If the Target vs Control difference is positive, local roads in 
 
 #### How to answer this and similar questions
 
-In my ongoing series about [[Law Firm Research Lab]]s we are discussing how to leverage AI tools to conduct preliminary research on questions before getting an expert involved. 
+In my ongoing series about [Law Firm Research Lab](/blog/law-firm-research-lab)s we are discussing how to leverage AI tools to conduct preliminary research on questions before getting an expert involved. 
 
-I started with a bigger question covered in my post on [[Data Centers and AI's Impact on your Community]] which led to a smaller and easier to investigate question: Will the substantial increase in activity around data center construction sites lead to increased collisions? I am specifically interested in West Texas and New Mexico because that's where I practice. 
+I started with a bigger question covered in my post on [Data Centers and AI's Impact on your Community](/blog/data-centers-and-ais-impact-on-your-community) which led to a smaller and easier to investigate question: Will the substantial increase in activity around data center construction sites lead to increased collisions? I am specifically interested in West Texas and New Mexico because that's where I practice. 
 
 My first step was to design a research project and find the data to crunch. I started by asking Google Gemini to search and compile any research it could find related to this question. My question is too specific so I searched out publically available information covering traffic collisions in specific counties. (cite to DOT files to get the data). I started with West Texas because the New Mexico data I am interested in requires a formal request.
 
@@ -109,6 +108,6 @@ If you or someone you know was injured by a truck or commercial vehicle around c
 Outline:
 - AI as pre-expert research
 - Obtaining traffic information
-- Case study - [[Data Centers and AI's Impact on your Community]]
+- Case study - [Data Centers and AI's Impact on your Community](/blog/data-centers-and-ais-impact-on-your-community)
 - Check out my traffic information app
 - I can help you do this

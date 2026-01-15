@@ -1,11 +1,13 @@
-
 ---
-title: "Data Centers and AI's Impact on your Community"
-description: "Understanding how the exlposion in AI Data Center construction impacts the surrounding communities"
+title: Data Centers and AI's Impact on your Community
+description: Understanding how the exlposion in AI Data Center construction impacts the surrounding communities
 pubDate: 2026-01-04
-published: true
-tags: ["AI", "Data Centers", "AI Infrastructure"]
-series: "Data Center Impact"
+published: false
+tags:
+  - AI
+  - Data Centers
+  - AI Infrastructure
+series: Data Center Impact
 seriesOrder: 1
 ---
 

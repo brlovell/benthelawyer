@@ -1,15 +1,9 @@
 ---
-title: Why I Don't Use AI to Write
-description: >-
-  AI tools are converging on the same ideas. If you rely on them to write you
-  are not using your most valuable asset.
-pubDate: '2026-01-08'
-tags:
-  - AI
-  - AI Tools
-  - Legal Writing
-  - Legal Research
-published: true
+title: Why I don't use AI to write
+summary: Explaining why your mental skills and work product suffer when AI writes for you.
+date: Sep 2025
+type: Op-Ed
+published: false
 ---
 
 TO: Readers
@@ -36,11 +30,11 @@ The internet is full of blog posts espousing the power of using Large Language M
 
 The use cases studied in this paper are important to those of us in a line of work that requires creative writing. What value can AI bring?
 
-How does this implicate attorneys?
+#### How does this implicate attorneys?
 
-We attorneys are paid for our analyses and argument. Legal argument may not seem ripe for creative potential, but creativity is required for novel arguments and interpretations. If we attorneys are all converging on the same analyses and argument because we are allowing LLMs to unduely influence our thoughts, what is the point? What, really, is the point of working as an advocate if you are not going to advocate?
+We are paid for our analyses and argument. Legal argument may not seem ripe for creative potential, but creativity is required for novel arguments and interpretations. If we attorneys are all converging on the same analyses and argument because we are allowing LLMs to unduely influence our thoughts, what is the point? What, really, is the point of working as an advocate if you are not going to advocate?
 
-Perhaps human influence will become more important in the future. As automated systems take hold in the insurance industry we may end up in a world where inhuman intelligence argues itself into an impasse. This reduction in human oversight leads my [Adversarial Demand Letter Research](/blog/adversarial-demand-letter-research) and [AI Adversarial Tech](/blog/ai-adversarial-tech) series. If we are involved in an intellectual arms race against insurance companies, I will come prepared.
+Perhaps human influence will become more important in the future. As automated systems take hold in the insurance industry we may end up in a world where inhuman intelligence argues itself into an impasse. This reduction in human oversight leads my [[Adversarial Demand Letter Research]] and [[AI Adversarial Tech]] series. If we are involved in an intellectual arms race against insurance companies, I will come prepared.
 
 #### AI (LLMs) Cannot Forge a New Path
 The predictive nature of Large Language Models ensures that they do not make their path by walking--they make it by retreading all previous paths. You are highly likely not to generate novel ideas in the legal realm if you use AI to write. You not only atrophy your most valuable asset, you leave the reasoning up to systems that have been shown to converge on the same ideas.
@@ -48,5 +42,3 @@ The predictive nature of Large Language Models ensures that they do not make the
 This certainly works in some legal contexts. Contract interpretation walks many of the same paths ad infinitum. Advocacy requires something different. Human persuasion often requires something more than the same.
 
 Keep writing.
-
-I assert the true value of generative AI is for repetitive tasks or data sets that cannot be meaninfullly comprehended or mined for information by a limited staff. Discovery analysis is a great example. 

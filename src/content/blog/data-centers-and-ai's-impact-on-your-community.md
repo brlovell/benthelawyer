@@ -1,16 +1,11 @@
 ---
-title: Data Centers and AI's Impact on your Community
-description: >-
-  Understanding how the exlposion in AI Data Center construction impacts the
-  surrounding communities
-pubDate: 2026-01-04T00:00:00.000Z
+title: 'Predictive Justice: The New Redlining?'
+summary: >-
+  Analyzing bias in AI-driven settlement prediction tools used by major
+  insurers.
+date: Sep 2025
+type: Op-Ed
 published: true
-tags:
-  - AI
-  - Data Centers
-  - AI Infrastructure
-series: Data Center Impact
-seriesOrder: 1
 ---
 
 TO: Readers

@@ -5,14 +5,16 @@ import matter from 'gray-matter';
 import { glob } from 'glob';
 
 // Configuration
-const OBSIDIAN_PATH = path.join(process.cwd(), 'obsidian-content'); // Submodule path
+const OBSIDIAN_PATH = path.join(process.cwd(), 'obsidian-content');
 const POSTS_DEST = path.join(process.cwd(), 'src/content/blog');
 const PAGES_DEST = path.join(process.cwd(), 'src/content/pages');
+const RESEARCH_DEST = path.join(process.cwd(), 'src/content/research');
 const IMAGES_DEST = path.join(process.cwd(), 'public/images/blog');
 
 // Ensure directories exist
 fs.ensureDirSync(POSTS_DEST);
 fs.ensureDirSync(PAGES_DEST);
+fs.ensureDirSync(RESEARCH_DEST);
 fs.ensureDirSync(IMAGES_DEST);
 
 async function ingest() {
@@ -33,18 +35,40 @@ async function ingest() {
         // Parse frontmatter
         const { data, content: body } = matter(content);
 
-        // Determine destination based on path or frontmatter
-        let destination = POSTS_DEST;
+        // Determine destination based on path
+        let destination = null;
         const relativeDir = path.dirname(file);
 
-        if (relativeDir.startsWith('pages') || data.type === 'page') {
+        // Normalize paths for cross-platform consistency
+        const normalizedDir = relativeDir.split(path.sep).join('/');
+
+        if (normalizedDir.startsWith('pages') || data.type === 'page') {
             destination = PAGES_DEST;
-        } else if (!data.published && !file.includes('pages')) {
-            // Only skip non-published files if they aren't pages
+        } else if (normalizedDir.startsWith('research')) {
+            destination = RESEARCH_DEST;
+        } else if (normalizedDir.startsWith('blog')) {
+            destination = POSTS_DEST;
+        } else {
+            // Skip root files or unclassified folders to keep src clean
+            // Alternatively, you could default to blog if you prefer:
+            // destination = POSTS_DEST; 
+            console.log(`Skipping unclassified file: ${file}`);
             continue;
         }
 
-        console.log(`Processing: ${file} -> ${destination === PAGES_DEST ? 'Pages' : 'Blog'}`);
+        if (destination === PAGES_DEST) {
+            // Always ingest pages
+        } else {
+            // Check published status
+            const isPublished = data.published !== undefined ? data.published : (destination === RESEARCH_DEST ? true : false); // Research defaults to true, Blog defaults to false
+
+            if (!isPublished) {
+                console.log(`Draft skipped: ${file}`);
+                continue;
+            }
+        }
+
+        console.log(`Processing: ${file} -> ${destination === PAGES_DEST ? 'Pages' : destination === RESEARCH_DEST ? 'Research' : 'Blog'}`);
 
         // 3. Process Content
         let processingBody = body;
@@ -54,6 +78,8 @@ async function ingest() {
             const [link, alias] = p1.split('|');
             const text = alias || link;
             const slug = link.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+            // For now, default all wikilinks to blog paths or relative
+            // Ideally we'd know where the target is.
             return `[${text}](/blog/${slug})`;
         });
 

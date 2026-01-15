@@ -1,32 +1,25 @@
 ---
-title: Data Centers and AI's Impact on your Community
-description: >-
-  Understanding how the exlposion in AI Data Center construction impacts the
-  surrounding communities
-pubDate: 2026-01-04T00:00:00.000Z
-published: true
-tags:
-  - AI
-  - Data Centers
-  - AI Infrastructure
-series: Data Center Impact
-seriesOrder: 1
+title: Data Centers and AI Impact on Your Community
+summary: Do data center buildouts affect their surrounding communities? Answering this question with traffic data and monitoring crash increases.
+date: 2026-01-05
+type: Op-Ed
+published: false
 ---
+*i need to add to this to make it more about what the title is than just the traffic analysis which shall be saved for the LFRL portion of the site*
 
 TO: Readers
 FROM: Ben Lovell
-DATE: January 4, 2026
 RE: Data Centers and AI's Impact on Communities
 
 ## QUESTION PRESENTED: 
 What impact does the massive buildout of AI infrastructure and data centers have on your local community.
 
 ## SHORT ANSWER: 
-Probable increase in truck and car crashes with increased traffic. Data centers are under construction is many rural areas because land is cheaper and local opposition is less likely. These projects may increase commercial vehicle traffic on interstates and especially local roads, possibly leading to an increase in car and truck crashes.
+Areas studied with data centers saw an increase in truck and car crashes not only on interstates, but on local roads as well. Data centers are under construction is many rural areas because land is cheaper and local opposition is less likely. These projects may increase commercial vehicle traffic on interstates and especially local roads, possibly leading to an increase in car and truck crashes.
 
 ## DISCUSSION
 
-As I covered in [Why you need to know how AI works](/blog/why-you-need-to-know-how-ai-works), Large Language Models (LLMs) require enormous amounts of energy and computer chips to work. LLMs are what most people are talking about when they discuss "AI." ChatGPT is an LLM, for example. The point is that AI requires a lot of resources.[^7]
+As I covered in [[Why you need to know how AI works]], Large Language Models (LLMs) require enormous amounts of energy and computer chips to work. LLMs are what most people are talking about when they discuss "AI." ChatGPT is an LLM, for example. The point is that AI requires a lot of resources.[^7]
 
 ### I. Why is AI Treated Like an Arms Race?
 
@@ -49,7 +42,7 @@ Completing construction, connecting to the grid, and powering up these data cent
 
 ## What does that mean for data centers near you?
 
-A possible increase in traffic collisions. A recent study of data from Holly Ridge, Louisianna, near Meta's "Hyperion" data center construction site, showed a 600% crash increase in the rural area. My [Data Center Traffic Commercial Liability](/blog/data-center-traffic-commercial-liability) study showed a similar correlation in local road crashes in Randall and Potter County Texas, sites of data center construction. 
+A possible increase in traffic collisions. A recent study of data from Holly Ridge, Louisianna, near Meta's "Hyperion" data center construction site, showed a 600% crash increase in the rural area. My [[Data Center Traffic Commercial Liability]] study showed a similar correlation in local road crashes in Randall and Potter County Texas, sites of data center construction. 
 
 Keep your eyes and ears peeled for increases in commercial vehicle collissions and electricity rate increases. If you or someone you know has been injured in and around these construction areas, you can contact info@makerightlaw.com
 

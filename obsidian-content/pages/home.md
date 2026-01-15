@@ -8,5 +8,3 @@ bioTitle: "About me"
 bioText: "I am a Trial Attorney licensed in New Mexico practicing law and building local AI servers in Santa Fe, New Mexico. "
 ---
 
-# Home Page Content
-This content is now managed via Obsidian.

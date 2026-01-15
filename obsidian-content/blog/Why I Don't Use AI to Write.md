@@ -1,8 +1,14 @@
-
-
+---
+title: Why I Don't Use AI to Write
+description: AI tools are converging on the same ideas. If you rely on them to write you are not using your most valuable asset.
+pubDate: 2026-01-08
+tags:
+  - AI
+published: false
+---
 
 TO: Readers
-FROM: Ben Lovell; **DATE:** January 1, 2026; 
+FROM: Ben Lovell
 RE: The real problem with AI writing.
 
 ## QUESTION PRESENTED: 
