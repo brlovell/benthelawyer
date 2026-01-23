@@ -91,9 +91,17 @@ async function ingest() {
             const imageSourcePath = findImageInVault(imageName, relativeDir);
 
             if (imageSourcePath) {
-                const destPath = path.join(IMAGES_DEST, imageName);
+                // Sanitize filename for web: lowercase, replace spaces/special chars with hyphens
+                const ext = path.extname(imageName);
+                const nameWithoutExt = path.basename(imageName, ext);
+                const sanitizedName = nameWithoutExt.toLowerCase()
+                    .replace(/\s+/g, '-')          // Replace spaces with -
+                    .replace(/[^a-z0-9-]/g, '')   // Remove other special chars
+                    + ext.toLowerCase();
+
+                const destPath = path.join(IMAGES_DEST, sanitizedName);
                 fs.copySync(imageSourcePath, destPath);
-                return `![${imageName}](/images/blog/${imageName})`;
+                return `![${nameWithoutExt}](/images/blog/${sanitizedName})`;
             } else {
                 console.warn(`   ⚠️  Image not found: ${imageName}`);
                 return match;
