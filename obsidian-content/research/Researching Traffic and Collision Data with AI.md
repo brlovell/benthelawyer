@@ -70,7 +70,7 @@ Of the total incidents, **269 (2.9%)** involved commercial vehicles. This metric
 
 ### Trend Over Time
 
-![Crash Trend](research_outputs/amarillo_analysis/amarillo_crash_trend.png)
+
 ![[amarillo_crash_trend.png]]
 
 The data indicates a complex trend over the 2022-2025 period. While the overall volume shows a slight decrease (-1.7%) comparing 2025 to 2022, there was a **significant 27.8% surge in crashes in 2024 (2,573 incidents)** compared to the previous year (2,012). The CMV involvement rate of 2.9% (269 incidents) suggests a baseline of heavy traffic in the corridor. 
