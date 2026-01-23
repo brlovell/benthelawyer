@@ -16,96 +16,62 @@ Yes there is correlation. Local road collisions show an increase in recent years
 
 ## DISCUSSION
 
-#### I. The Results
-I'll start with the results. The analysis I performed on specifically Potter and Randall counties revealed that there is a general increase in local traffic collisions in the construction site areas.
+#### I. Area Studied
+This analysis is used as an example and limited to Potter and Randall Counties in Amarillo, Texas. I built an interactive map containing the data for seven different data center construction sites around West Texas and New Mexico available at www.datacentertraffic.com.
 
-#### Executive Summary
+![[Pasted image 20260123131646.png]]
 
-This report isolates crash data on **local roads** (city streets, county roads) to identify neighborhood-level traffic impacts potentially linked to construction activity. Data is compared against major highway trends and regional control groups.
+#### II. The Results
+My analysis of the Amarillo Hyperscale Project in Potter County revealed that there is a general increase in local traffic collisions surrounding the construction site.
 
-**Key Findings in Potter and Randall Counties:**
+### II. Analysis
 
-- **18,008** crashes on local roads (69.4% of area total)
-- **+14.8%** change in local road crash rate (Pre vs Post)
-- **4.5%** of post-start local crashes involved commercial vehicles
+I analyzed traffic collision data within the geofenced area (Lat: 35.15-35.25, Lon: -101.9--101.8) of the proposed Amarillo Hyperscale Data Center project in Potter County, Texas. Utilizing TxDOT C.R.I.S. data from 2022-01-01 to 2025-12-23, I identified trends in crash frequency and Commercial Motor Vehicle (CMV) involvement to assess the safety impact of pre-construction and early mobilization activities.
+## Methodology
 
----
+### Data Ingestion
 
-#### 1. Analysis Methodology
-#### 1.1 Local Road Definition
+The analysis utilizes the "Industrial Safety Impact Monitor" dataset, specifically the `crashes_manual.csv` aggregate which includes:
 
-"Local Roads" are defined as roadways **excluding** the state highway system (Interstates, US Highways, State Highways).
+- **Source**: TxDOT Crash Records Information System (C.R.I.S.)
 
-**Note:** Farm-to-Market (FM) and Ranch-to-Market (RM) roads **ARE INCLUDED** in this local road analysis.
+- **Geospatial Scope**: Bounded box covering the Amarillo Hyperscale site and immediate access corridors.
 
-This isolates traffic that is more likely to be residential or "last-mile" construction access.
+- **Timeframe**: 2022 - 2025
 
-#### 1.2 Timeline
-- **Construction Start Date:** 2025-06-01 (Approximate start of Fermi/Pantex activity)
-- **Pre-Period:** 41.6 months
-- **Post-Period:** 6.8 months
+- **Total Records**: 9285
 
----
+### Analysis Performed
 
-#### 2. Local Road Impact Analysis
+1. **Geospatial Filtering**: Crashes were isolated to the project's specific coordinate bounding box.
 
-#### 2.1 Local vs. Major Road Trends
+2. **Temporal Aggregation**: Incident frequency was analyzed on a monthly and yearly basis to detect inflection points coinciding with project timelines.
 
-|Road Type|Pre-Construction Rate (per mo)|Post-Construction Rate (per mo)|% Change|
-|---|---|---|---|
-|**Local Roads**|364.4|418.5|**+14.8%**|
-|Major Highways|163.9|165.4|+1.0%|
+3. **Severity Classification**: Incidents were categorized by CMV involvement to isolate risks associated with heavy construction logistics.
 
-#### 2.2 Commercial Vehicle Encroachment
-
-A key indicator of construction impact is the "spillover" of heavy trucks onto local roads.
-
-- **Pre-Construction CMV Rate (Local):** 3.8%
-- **Post-Construction CMV Rate (Local):** 4.5%
-- **Change:** +0.7 percentage points
-
----
-
-#### 3. Regional Context (Control Group)
-
-Comparison with similar local roads in non-target counties:
-
-- **Control Group Change:** -8.1%
-- **Difference (Target vs Control):** +23.0%
-
-interpretation: If the Target vs Control difference is positive, local roads in Potter/Randall are seeing a disproportionate increase in accidents compared to the region.
-
-#### II. How to answer this and similar questions
-
-In my ongoing series about [[Law Firm Research Lab]]s we are discussing how to leverage AI tools to conduct preliminary research on questions before getting an expert involved. 
-
-I started with a bigger question covered in my post on [[Data Centers and AI's Impact on your Community]] which led to a smaller and easier to investigate question: Will the substantial increase in activity around data center construction sites lead to increased collisions? I am specifically interested in West Texas and New Mexico because that's where I practice. 
-
-My first step was to design a research project and find the data to crunch. I started by asking Google Gemini to search and compile any research it could find related to this question. My question is too specific so I searched out publically available information covering traffic collisions in specific counties. (cite to DOT files to get the data). I started with West Texas because the New Mexico data I am interested in requires a formal request.
-
-#### Designing Software to Crunch the Numbers
-
-I attempted to double major in computer science and music performance as an undergraduate. I failed to do so and have a degree in classical guitar performance. I am not a software engineer. Thankfully, I don't have to be.
-
-#### "Vibe" Coding
-You may have heard the term "vibe coding" and instinctively ignored it as silly. It sounds silly but it is amazingly useful. You no longer need to know how to program a computer to write a computer program. A basic understanding of software helps you to "vibe" code but it is not required. Coding agents such as Claude Code allow anyone, lawyers even, to tell an AI model what they want to create, and watch as the model writes the code for you. You may be frustrated with the back and forth required to get the software working but it just works. Read my post about [[How I created trial preparation software]] to learn more.
-
-#### The Traffic Data Research Dashboard
-With the help of AI, I created a piece of software that runs in my web browser that allows me to upload traffic data downloaded from the TX (whatever) website and break down how many collisions were reported in the specific areas I'm studying. I broke down the output by data center construction project and further separated out interstates such as I-40 to focus on local traffic.
-
-(image of output)
-
-I created a static webpage with the research report's findings
-
-#### IV. How was the data analyzed?
+## Results
 
 
-#### What this means for residents near data center construction sites
-If you or someone you know was injured by a truck or commercial vehicle around construction sites in Texas, contact info@makerightlaw.com or call 
+A total of **9285** crashes were recorded in the study area.
 
-Outline:
-- AI as pre-expert research
-- Obtaining traffic information
-- Case study - [[Data Centers and AI's Impact on your Community]]
-- Check out my traffic information app
-- I can help you do this
+Yearly breakdown:
+
+- **2022**: 2370 crashes
+
+- **2023**: 2012 crashes
+
+- **2024**: 2573 crashes
+
+- **2025**: 2330 crashes
+
+### Commercial Vehicle (CMV) Involvement
+
+Of the total incidents, **269 (2.9%)** involved commercial vehicles. This metric is critical as CMV accidents often have higher severity due to vehicle mass.
+
+### Trend Over Time
+
+![Crash Trend](research_outputs/amarillo_analysis/amarillo_crash_trend.png)
+![[amarillo_crash_trend.png]]
+
+The data indicates a complex trend over the 2022-2025 period. While the overall volume shows a slight decrease (-1.7%) comparing 2025 to 2022, there was a **significant 27.8% surge in crashes in 2024 (2,573 incidents)** compared to the previous year (2,012). The CMV involvement rate of 2.9% (269 incidents) suggests a baseline of heavy traffic in the corridor. 
+

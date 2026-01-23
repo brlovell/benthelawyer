@@ -8,8 +8,6 @@ type: Op-Ed
 published: true
 ---
 
-TO: Readers
-FROM: Ben Lovell
 RE: How do attorneys get better answers from AI models?
 
 ## QUESTION PRESENTED: 

@@ -95,16 +95,72 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/contact.md",
+                "file": "research/Researching Traffic and Collision Data with AI.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Researching Traffic and Collision Data with AI"
+            }
+          },
+          {
+            "id": "0da95477ba450ff3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Motion Drafting Help with AI.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Motion Drafting Help with AI"
+            }
+          },
+          {
+            "id": "982862bf603b7a2d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/Data Centers and AI's Impact on your Community.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Data Centers and AI's Impact on your Community"
+            }
+          },
+          {
+            "id": "65c39f204a436faf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/Data Centers and AI's Impact on your Community.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "contact"
+              "title": "Data Centers and AI's Impact on your Community"
+            }
+          },
+          {
+            "id": "6ec64a29afe1a531",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/Law Firm Research Lab to Study Traffic Data.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Law Firm Research Lab to Study Traffic Data"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -266,26 +322,22 @@
       "bases:Create new base": false
     }
   },
-  "active": "6a7b72726a85622a",
+  "active": "adb1c96b56a756d3",
   "lastOpenFiles": [
-    "pages/about.md",
-    "pages/contact.md",
-    "blog/Why you need to know how AI works.md",
-    "blog/Why I don't use AI to write..md",
-    "blog/Why I Don't Use AI to Write.md",
-    "blog/Analyze your Depositions and Learn.md",
-    "blog/Arc Flash Risk at Data Centers.md",
-    "blog/Context Engineering for Attorneys.md",
-    "blog/Basic AI Post Workflow.md",
-    "blog/AI Doom.md",
-    "blog/Solving Mass Torts Problems with AI.md",
     "research/Researching Traffic and Collision Data with AI.md",
-    "blog/Untitled.md",
-    "blog/Creating Demonstratives with AI.md",
-    "blog/Data Center Traffic Commercial Liability.md",
+    "amarillo_cmv_dist.png",
+    "amarillo_crash_trend.png",
+    "Pasted image 20260123131646.png",
+    "blog/Data Center Hiring Needs.md",
     "blog/Data Centers and AI's Impact on your Community.md",
     "blog/Data-Centers-AI-Impact-on-your-Community.md",
     "blog/Ethical Considerations while using AI.md",
+    "blog/Context Engineering for Attorneys.md",
+    "blog/Basic AI Post Workflow.md",
+    "blog/Arc Flash Risk at Data Centers.md",
+    "blog/Creating Demonstratives with AI.md",
+    "blog/Data Center Traffic Commercial Liability.md",
+    "blog/Exerything exists in context.md",
     "blog/FEMA and Statutory Interpretation.md",
     "blog/How I created trial preparation software.md",
     "blog/How to use AI as a practicing attorney - Level 1.md",
@@ -293,6 +345,14 @@
     "blog/Jury instructions help.md",
     "blog/Law Firm Research Lab.md",
     "blog/Law Firm Research Lab to Study Traffic Data.md",
-    "blog/Lawyer AI discussion.md"
+    "blog/Lawyer AI discussion.md",
+    "blog/Legal AI Vendor Problems.md",
+    "blog/On AI and Admissibility.md",
+    "blog/Planting the seeds.md",
+    "blog/Solving Mass Torts Problems with AI.md",
+    "blog/Why I Don't Use AI to Write.md",
+    "blog/Why I don't use AI to write..md",
+    "blog/Why you need to know how AI works.md",
+    "Untitled"
   ]
 }

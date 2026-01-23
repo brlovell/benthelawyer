@@ -1,11 +1,10 @@
 ---
 title: Data Centers and AI Impact on Your Community
 summary: Do data center buildouts affect their surrounding communities? Answering this question with traffic data and monitoring crash increases.
-date: 2026-01-05
+date: 2026-01-22
 type: Op-Ed
-published: false
+published: true
 ---
-*i need to add to this to make it more about what the title is than just the traffic analysis which shall be saved for the LFRL portion of the site*
 
 TO: Readers
 FROM: Ben Lovell
@@ -15,36 +14,35 @@ RE: Data Centers and AI's Impact on Communities
 What impact does the massive buildout of AI infrastructure and data centers have on your local community.
 
 ## SHORT ANSWER: 
-Areas studied with data centers saw an increase in truck and car crashes not only on interstates, but on local roads as well. Data centers are under construction is many rural areas because land is cheaper and local opposition is less likely. These projects may increase commercial vehicle traffic on interstates and especially local roads, possibly leading to an increase in car and truck crashes.
+Areas I've studied with data center construction sites saw a predictable increase in truck and car crashes on local roads. 
 
 ## DISCUSSION
 
-As I covered in [[Why you need to know how AI works]], Large Language Models (LLMs) require enormous amounts of energy and computer chips to work. LLMs are what most people are talking about when they discuss "AI." ChatGPT is an LLM, for example. The point is that AI requires a lot of resources.[^7]
+As I covered in [[Why you need to know how AI works]], Large Language Models (LLMs) require enormous amounts of energy and computer chips to work. LLMs are what most people are talking about when they discuss "AI," and these models require a lot of resources.[^7]
 
 ### I. Why is AI Treated Like an Arms Race?
 
-The phase, "Manhattan Project," has been bandied about in the media when referring to AI infrastructure projects.[^5] The imagery is deliberate. According to the prevailing research, increasing the scale of these systems leads to increases in the system's abilities[^6]. To put it another way, the government with the most and fastest data centers has the best chance of winning the race. The prize at the end is believed to be unlimited economic growth and scientific discovery. What are we racing to build?
+The phrase, "Manhattan Project," has been bandied about in the media when referring to AI infrastructure projects.[^5] The imagery is deliberate. According to the prevailing research, increasing the scale of these systems leads to increases in the system's abilities[^6]. To put it another way, the government with the most and fastest data centers has the best chance of winning the race. The prize at the end is believed to be unlimited economic growth and scientific discovery. What are we racing to build?
 
 ##### General Intelligence vs. Super Intelligence
 
-Artificial Intelligence as a term is a broad. Companies and countries around the world are racing to build something more specific--Artificial General Intelligence (AGI). Most of the serious discussion around AI concerns a benchmark of achievement we will refer to as Artificial General Intelligence. AGI is another vague and nebulous term that can mean anything from OpenAI's ability to achieve $100 billion in profit[^2] to intelligence comparable to an average human. Human level intelligence is arguably enough to cause a serious upset. (cite)
-Artificial Super Intelligence (ASI), on the other hand, will be better than us and is regarded as a possible extinction level event for humanity [^1][^3].
+Artificial Intelligence as a term is a broad. Companies and countries around the world are racing to build something more specific--Artificial General Intelligence (AGI). Most of the serious discussion around AI concerns a benchmark of achievement we will refer to as Artificial General Intelligence. AGI is another vague and nebulous term that can mean anything from OpenAI's ability to achieve $100 billion in profit[^2] to intelligence comparable to an average human. Human level intelligence is arguably enough to cause a serious upset. Artificial Super Intelligence (ASI), on the other hand, will be better than us and is regarded as a possible extinction level event for humanity [^1][^3].
 
-For now, let's focus on AGI. AGI will be enough to create a lot of money and replace a lot of human jobs and that is enough of an incentive to enter the race. The general idea is that the first person to build super intelligence will essentially control the future. If we can control it, that is, but that's a different discussion[^4]. Whatever the prize, everyone is afraid of losing.
+AGI will be enough to create a lot of money and replace a lot of human jobs and that is enough of an incentive to enter the race. The general idea is that the first person to build super intelligence will essentially control the future. If we can control it, that is, but that's a different discussion[^4]. Whatever the prize, everyone is afraid of losing.
 
 ## II. Why the Race to the Finish Matters
 
-"Move fast and break things," read the immortal words of Mark Zuckerburg when describing the Silicon Valley ethos[^8]. The tech industry values speed and arguably views regulation as unneccisarry. Their new narrative (whether true or not is debatable) is couched entirely in the speed of the investment and buildout required. Scale and speed are the most important factors. OpenAI has committed hundreds of billions of dollars in debt to the construction of data centers and staked their competitive edge in the AI sector on these projects. 
+"Move fast and break things," read the immortal words of Mark Zuckerburg when describing the Silicon Valley ethos[^8]. The tech industry's new narrative (the truth of which is debatable) is couched entirely in the speed of the investment and buildout required. Scale and speed are the most important factors. There are detractors, of course, but OpenAI has committed hundreds of billions of dollars in debt to the construction of data centers and staked their competitive edge in the AI sector on these projects. 
 
 #### Safety Slows Things Down
 
-Completing construction, connecting to the grid, and powering up these data center computers are vitally important to AI companies. Microsoft's CEO recently said the company has too many processors and no where to plug them in[^9]. Power infrastructure is not being built quickly enough and companies like xAI are resorting to gas turbines without bothering to get permits to run them. [^10]Companies are building gas generators powered by supersonic jet engines as they wait for grid connections. [^11]Speed is clearly a priority and often safety regulations--the permitting process, for example--get in the way. 
+Completing construction, connecting to the grid, and powering up these proposed data centers is vitally important to AI companies and their stock price. Microsoft's CEO recently said the company has too many processors and no where to plug them in[^9]. Power infrastructure is not being built quickly enough and companies like xAI are resorting to gas turbines without bothering to get permits to run them. [^10]Companies are building gas generators powered by supersonic jet engines as they wait for grid connections. [^11]
 
 ## What does that mean for data centers near you?
 
-A possible increase in traffic collisions. A recent study of data from Holly Ridge, Louisianna, near Meta's "Hyperion" data center construction site, showed a 600% crash increase in the rural area. My [[Data Center Traffic Commercial Liability]] study showed a similar correlation in local road crashes in Randall and Potter County Texas, sites of data center construction. 
+For starters, possible increase in traffic collisions. A recent study of data from Holly Ridge, Louisiana, near Meta's "Hyperion" data center construction site, showed a 600% crash increase in the rural area. My own research shows a similar correlation in local road crashes in Randall and Potter County Texas near data center construction sites.
 
-Keep your eyes and ears peeled for increases in commercial vehicle collissions and electricity rate increases. If you or someone you know has been injured in and around these construction areas, you can contact info@makerightlaw.com
+Keep your eyes and ears peeled for increases in commercial vehicle collisions and electricity rate increases. If you or someone you know has been injured in and around these construction areas, contact ben@makerightlaw.com.
 
 
 [^1]: Russell, S. (2019). _Human Compatible: Artificial Intelligence and the Problem of Control_. Viking.

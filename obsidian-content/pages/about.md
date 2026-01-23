@@ -3,20 +3,18 @@ title: About
 type: page
 headerTitle: Advocate. Researcher. Teacher.
 experience:
-  - year: 2025 - Present
+  - year: Present
     role: Associate Attorney
     org: Make Right Law
     desc: Specializing in complex personal injury and torts litigation.
-  - year: 2024-25
+  - year: Past
     role: Associate Attorney General, Consumer Protection Division
     org: New Mexico Department of Justice
     desc: Worked on fintech consumer protection, TILA, multi-district litigations, anti-trust and Unfair Practices Act claims.
 education:
-  - year: "2023"
-    degree: Juris Doctor
+  - degree: Juris Doctor
     org: University of Denver Sturm College of Law
-  - year: "2011"
-    degree: Bachelor of Music - Classical Guitar Performance
+  - degree: Bachelor of Music - Classical Guitar Performance
     org: University of Minnesota
 ---
 

@@ -15,8 +15,8 @@
   --color-charcoal: #2A1B30;
   /* Deep Plum/Charcoal (Warmer dark text) */
 
-  --font-heading: 'Outfit', sans-serif;
-  --font-body: 'Atkinson Hyperlegible', sans-serif;
+  --font-heading: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
 
   --animate-fade-in: fade-in 0.5s ease-out forwards;
 }
