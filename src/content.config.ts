@@ -40,7 +40,7 @@ const pages = defineCollection({
 			desc: z.string()
 		})).optional(),
 		education: z.array(z.object({
-			year: z.string(),
+			year: z.string().optional(),
 			degree: z.string(),
 			org: z.string(),
 		})).optional(),
