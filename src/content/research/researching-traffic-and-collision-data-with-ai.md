@@ -25,7 +25,7 @@ Yes there is correlation. Local road collisions show an increase in recent years
 #### I. Area Studied
 This analysis is used as an example and limited to Potter and Randall Counties in Amarillo, Texas. I built an interactive map containing the data for seven different data center construction sites around West Texas and New Mexico available at www.datacentertraffic.com.
 
-![Pasted image 20260123131646.png](/blog/pasted-image-20260123131646png)
+![Pasted image 20260123131646](/images/blog/pasted-image-20260123131646.png)
 
 #### II. The Results
 My analysis of the Amarillo Hyperscale Project in Potter County revealed that there is a general increase in local traffic collisions surrounding the construction site.
@@ -77,7 +77,7 @@ Of the total incidents, **269 (2.9%)** involved commercial vehicles. This metric
 ### Trend Over Time
 
 
-![amarillo_crash_trend.png](/blog/amarillocrashtrendpng)
+![amarillo_crash_trend](/images/blog/amarillocrashtrend.png)
 
 The data indicates a complex trend over the 2022-2025 period. While the overall volume shows a slight decrease (-1.7%) comparing 2025 to 2022, there was a **significant 27.8% surge in crashes in 2024 (2,573 incidents)** compared to the previous year (2,012). The CMV involvement rate of 2.9% (269 incidents) suggests a baseline of heavy traffic in the corridor. 
 

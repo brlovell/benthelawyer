@@ -75,17 +75,7 @@ async function ingest() {
         // 3. Process Content
         let processingBody = body;
 
-        // A. Wikilinks replacement
-        processingBody = processingBody.replace(/\[\[([^\]]+)\]\]/g, (match, p1) => {
-            const [link, alias] = p1.split('|');
-            const text = alias || link;
-            const slug = link.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
-            // For now, default all wikilinks to blog paths or relative
-            // Ideally we'd know where the target is.
-            return `[${text}](/blog/${slug})`;
-        });
-
-        // B. Image Embeds
+        // A. Image Embeds (Process BEFORE Wikilinks to prevent ![[...]] being caught as [[...]])
         processingBody = processingBody.replace(/!\[\[([^\]]+)\]\]/g, (match, p1) => {
             const imageName = p1.trim();
             const imageSourcePath = findImageInVault(imageName, relativeDir);
@@ -106,6 +96,16 @@ async function ingest() {
                 console.warn(`   ⚠️  Image not found: ${imageName}`);
                 return match;
             }
+        });
+
+        // B. Wikilinks replacement
+        processingBody = processingBody.replace(/\[\[([^\]]+)\]\]/g, (match, p1) => {
+            const [link, alias] = p1.split('|');
+            const text = alias || link;
+            const slug = link.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+            // For now, default all wikilinks to blog paths or relative
+            // Ideally we'd know where the target is.
+            return `[${text}](/blog/${slug})`;
         });
 
         // 4. Write to Src
