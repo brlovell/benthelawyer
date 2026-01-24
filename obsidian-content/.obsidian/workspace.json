@@ -149,14 +149,12 @@
             "id": "6ec64a29afe1a531",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "blog/Law Firm Research Lab to Study Traffic Data.md",
-                "mode": "source",
-                "source": true
+                "file": "attachments/amarillo_cmv_dist.png"
               },
-              "icon": "lucide-file",
-              "title": "Law Firm Research Lab to Study Traffic Data"
+              "icon": "lucide-image",
+              "title": "amarillo_cmv_dist"
             }
           }
         ],
@@ -324,10 +322,11 @@
   },
   "active": "adb1c96b56a756d3",
   "lastOpenFiles": [
+    "blog/Law Firm Research Lab to Study Traffic Data.md",
     "research/Researching Traffic and Collision Data with AI.md",
-    "amarillo_cmv_dist.png",
-    "amarillo_crash_trend.png",
-    "Pasted image 20260123131646.png",
+    "attachments/amarillo_cmv_dist.png",
+    "attachments/amarillo_crash_trend.png",
+    "attachments/Pasted image 20260123131646.png",
     "blog/Data Center Hiring Needs.md",
     "blog/Data Centers and AI's Impact on your Community.md",
     "blog/Data-Centers-AI-Impact-on-your-Community.md",
@@ -344,7 +343,6 @@
     "blog/Important jobs can be done with your email.md",
     "blog/Jury instructions help.md",
     "blog/Law Firm Research Lab.md",
-    "blog/Law Firm Research Lab to Study Traffic Data.md",
     "blog/Lawyer AI discussion.md",
     "blog/Legal AI Vendor Problems.md",
     "blog/On AI and Admissibility.md",
