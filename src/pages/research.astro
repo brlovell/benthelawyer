@@ -4,6 +4,11 @@ import { getEntry, getCollection, render } from 'astro:content';
 import Search from '../components/Search.astro';
 
 const researchPage = await getEntry('pages', 'research');
+
+if (!researchPage) {
+  throw new Error("Could not find 'research' page content");
+}
+
 const { Content } = await render(researchPage);
 const { data } = researchPage;
 const papers = await getCollection('research');

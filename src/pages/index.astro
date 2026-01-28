@@ -6,7 +6,12 @@ import Featured from "../components/Featured.astro";
 import { getEntry } from "astro:content";
 
 const homePage = await getEntry("pages", "home");
-const { data: home } = homePage || { data: {} };
+
+if (!homePage) {
+  throw new Error("Could not find 'home' page content");
+}
+
+const { data: home } = homePage;
 
 // Hi, I'm Ben, the Lawyer
 ---

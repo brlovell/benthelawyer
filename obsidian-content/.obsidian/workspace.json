@@ -149,12 +149,14 @@
             "id": "6ec64a29afe1a531",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "attachments/amarillo_cmv_dist.png"
+                "file": "pages/about.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "amarillo_cmv_dist"
+              "icon": "lucide-file",
+              "title": "about"
             }
           }
         ],
@@ -322,9 +324,10 @@
   },
   "active": "adb1c96b56a756d3",
   "lastOpenFiles": [
+    "attachments/PXL_20260120_164417144-EDIT.jpg",
+    "attachments/amarillo_cmv_dist.png",
     "blog/Law Firm Research Lab to Study Traffic Data.md",
     "research/Researching Traffic and Collision Data with AI.md",
-    "attachments/amarillo_cmv_dist.png",
     "attachments/amarillo_crash_trend.png",
     "attachments/Pasted image 20260123131646.png",
     "blog/Data Center Hiring Needs.md",
@@ -350,7 +353,6 @@
     "blog/Solving Mass Torts Problems with AI.md",
     "blog/Why I Don't Use AI to Write.md",
     "blog/Why I don't use AI to write..md",
-    "blog/Why you need to know how AI works.md",
     "Untitled"
   ]
 }

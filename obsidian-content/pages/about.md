@@ -18,7 +18,8 @@ education:
     org: University of Minnesota
 ---
 
-I work as a plaintiff's trial attorney in New Mexico. I went to law school in Colorado but decided I wanted to practice in New Mexico because I like it here. I spent my time at law school competing in and coaching teams for mock trial tournaments; to me, there is no greater sport.
+I work as a plaintiff's trial attorney in New Mexico. I went to law school in Colorado but decided I wanted to practice in New Mexico because I like it here. I spent my time at law school competing in and coaching teams for mock trial tournaments; to me, there is no greater sport. I am married to a wonderful woman and we have two law dogs: Fiona and Lulu.
+![[PXL_20260120_164417144-EDIT.jpg]]
 
 I worked for the New Mexico Department of Justice as an Assistant Attorney General in Consumer Protection. I loved the work and the lawyers I with whom I worked and from whom I learned. I took advantage of the opportunity to learn from the best lawyers in the country on massive multi-district litigations and I also investigated state businesses accused of wronging the citizens. I learned the legislative process and how difficult it is to fend off legislation backed by industry groups that would harm consumers. I loved working for the state but missed working with clients so I passed on my *parens patriae* duty to the next AAG and moved into private practice with Make Right Law.
 
