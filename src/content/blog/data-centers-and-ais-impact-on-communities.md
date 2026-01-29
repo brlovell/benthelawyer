@@ -44,6 +44,8 @@ Completing construction, connecting to the grid, and powering up these proposed 
 
 For starters, possible increase in traffic collisions. A recent study of data from Holly Ridge, Louisiana, near Meta's "Hyperion" data center construction site, showed a 600% crash increase in the rural area. My own research shows a similar correlation in local road crashes in Randall and Potter County Texas near data center construction sites.
 
+Second, all these proposed data centers may not be completed. The driving force behind their construction is masses of debt reliant on companies like ChatGPT increasing their revenue by multiple tens of billions in a few years. We shall see.
+
 
 [^1]: Russell, S. (2019). _Human Compatible: Artificial Intelligence and the Problem of Control_. Viking.
 

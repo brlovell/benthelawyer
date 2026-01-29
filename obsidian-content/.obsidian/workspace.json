@@ -151,16 +151,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/research.md",
+                "file": "research/Researching Traffic and Collision Data with AI.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "research"
+              "title": "Researching Traffic and Collision Data with AI"
+            }
+          },
+          {
+            "id": "86e2d8c0c18a4807",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/Data Centers and AI's Impact on Communities.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Data Centers and AI's Impact on Communities"
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -322,8 +336,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "6ec64a29afe1a531",
+  "active": "86e2d8c0c18a4807",
   "lastOpenFiles": [
+    "Building Trial Preparation Software.md",
+    "research/Researching Traffic and Collision Data with AI.md",
+    "pages/research.md",
     "pages/about.md",
     "attachments/PXL_20260121_163321343.NIGHT~2.jpg",
     "blog/Context Engineering for Attorneys.md",
@@ -334,7 +351,6 @@
     "attachments/PXL_20260120_164417144-EDIT.jpg",
     "attachments/amarillo_cmv_dist.png",
     "blog/Law Firm Research Lab to Study Traffic Data.md",
-    "research/Researching Traffic and Collision Data with AI.md",
     "attachments/amarillo_crash_trend.png",
     "attachments/Pasted image 20260123131646.png",
     "blog/Data Center Hiring Needs.md",
@@ -354,7 +370,6 @@
     "blog/Legal AI Vendor Problems.md",
     "blog/On AI and Admissibility.md",
     "blog/Planting the seeds.md",
-    "blog/Solving Mass Torts Problems with AI.md",
     "Untitled"
   ]
 }

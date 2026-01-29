@@ -9,16 +9,31 @@ const posts = (await getCollection('blog'))
 ---
 
 <Layout title="Writing & Research | Ben Lovell">
-  <main class="bg-canvas min-h-screen py-20 px-6">
-    <div class="max-w-6xl mx-auto">
-      
-      <!-- Header -->
-      <div class="mb-12 text-center max-w-3xl mx-auto">
-        <h1 class="text-4xl md:text-5xl font-bold text-charcoal mb-6">Writing & Research</h1>
-        <p class="text-xl text-charcoal/70 font-body mb-10">
+  <main class="bg-canvas min-h-screen">
+    <!-- Hero Section -->
+    <div class="relative w-full h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden mb-16">
+      <!-- Background Image -->
+      <div 
+        class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style="background-image: url('/images/writing.png');"
+      >
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-charcoal/60 backdrop-blur-[2px]"></div>
+      </div>
+
+      <!-- Content -->
+      <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 border-b-2 border-adobe/50 pb-6 inline-block">
+          Writing & Research
+        </h1>
+        <p class="text-xl md:text-2xl text-white/90 font-body leading-relaxed max-w-2xl mx-auto">
           Exploring the intersection of tort law, artificial intelligence, and justice in the digital age.
         </p>
-        
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 pb-20">
+      <div class="mb-16 text-center max-w-2xl mx-auto">
         <Search />
       </div>
 
