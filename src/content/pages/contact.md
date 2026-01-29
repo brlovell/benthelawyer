@@ -9,4 +9,4 @@ contactInfo:
   github: '#'
 ---
 
-Whether you're a prospective client or just a curious person, I'd love to hear from you.
+Drop me a line.

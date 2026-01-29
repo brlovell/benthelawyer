@@ -165,12 +165,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/research.md",
+                "file": "research/Researching Traffic and Collision Data with AI.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "research"
+              "title": "Researching Traffic and Collision Data with AI"
             }
           }
         ],
@@ -338,11 +338,12 @@
   },
   "active": "86e2d8c0c18a4807",
   "lastOpenFiles": [
+    "research/Building Trial Preparation Software.md",
+    "pages/contact.md",
     "pages/blog.md",
-    "blog/Data Centers and AI's Impact on Communities.md",
-    "Building Trial Preparation Software.md",
-    "research/Researching Traffic and Collision Data with AI.md",
     "pages/research.md",
+    "blog/Data Centers and AI's Impact on Communities.md",
+    "research/Researching Traffic and Collision Data with AI.md",
     "pages/about.md",
     "attachments/PXL_20260121_163321343.NIGHT~2.jpg",
     "blog/Context Engineering for Attorneys.md",
@@ -369,7 +370,6 @@
     "blog/Law Firm Research Lab.md",
     "blog/Lawyer AI discussion.md",
     "blog/Legal AI Vendor Problems.md",
-    "blog/On AI and Admissibility.md",
     "Untitled"
   ]
 }
