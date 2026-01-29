@@ -165,12 +165,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/Data Centers and AI's Impact on Communities.md",
+                "file": "pages/research.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Data Centers and AI's Impact on Communities"
+              "title": "research"
             }
           }
         ],
@@ -338,6 +338,8 @@
   },
   "active": "86e2d8c0c18a4807",
   "lastOpenFiles": [
+    "pages/blog.md",
+    "blog/Data Centers and AI's Impact on Communities.md",
     "Building Trial Preparation Software.md",
     "research/Researching Traffic and Collision Data with AI.md",
     "pages/research.md",
@@ -345,7 +347,6 @@
     "attachments/PXL_20260121_163321343.NIGHT~2.jpg",
     "blog/Context Engineering for Attorneys.md",
     "blog/How does AI work and why do I care?.md",
-    "blog/Data Centers and AI's Impact on Communities.md",
     "blog/FEMA and Statutory Interpretation.md",
     "attachments/Pasted image 20260129111657.png",
     "attachments/PXL_20260120_164417144-EDIT.jpg",
@@ -369,7 +370,6 @@
     "blog/Lawyer AI discussion.md",
     "blog/Legal AI Vendor Problems.md",
     "blog/On AI and Admissibility.md",
-    "blog/Planting the seeds.md",
     "Untitled"
   ]
 }
