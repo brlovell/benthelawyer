@@ -1,13 +1,15 @@
 ---
-title: Data Centers and AI Impact on Your Community
-summary: Do data center buildouts affect their surrounding communities? Answering this question with traffic data and monitoring crash increases.
-date: 2026-01-22
-type: Op-Ed
+title: Data Centers and AI's Impact on Communities
+summary: >-
+  Do data center buildouts affect the traffic in the communities in which they
+  are built? Analysing this question with traffic data.
+date: '2026-01-22'
+type: Article
 published: true
 ---
 
-TO: Readers
 FROM: Ben Lovell
+
 RE: Data Centers and AI's Impact on Communities
 
 ## QUESTION PRESENTED: 
@@ -18,7 +20,7 @@ Areas I've studied with data center construction sites saw a predictable increas
 
 ## DISCUSSION
 
-As I covered in [[Why you need to know how AI works]], Large Language Models (LLMs) require enormous amounts of energy and computer chips to work. LLMs are what most people are talking about when they discuss "AI," and these models require a lot of resources.[^7]
+As I covered in [How does AI work and why do I care?](/blog/how-does-ai-work-and-why-do-i-care), Large Language Models (LLMs) require enormous amounts of energy and computer chips to work. LLMs are what most people are talking about when they discuss "AI," and these models require a lot of resources.[^7]
 
 ### I. Why is AI Treated Like an Arms Race?
 

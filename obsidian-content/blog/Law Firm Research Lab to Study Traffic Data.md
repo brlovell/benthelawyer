@@ -25,7 +25,7 @@ I'll start with the results. The analysis I performed on specifically Potter and
 
 In my ongoing series about [[Law Firm Research Lab]]s we are discussing how to leverage AI tools to conduct preliminary research on questions before getting an expert involved. 
 
-I started with a bigger question covered in my post on [[Data Centers and AI's Impact on your Community]] which led to a smaller and easier to investigate question: Will the substantial increase in activity around data center construction sites lead to increased collisions? I am specifically interested in West Texas and New Mexico because that's where I practice. 
+I started with a bigger question covered in my post on [[Data Centers and AI's Impact on Communities]] which led to a smaller and easier to investigate question: Will the substantial increase in activity around data center construction sites lead to increased collisions? I am specifically interested in West Texas and New Mexico because that's where I practice. 
 
 My first step was to design a research project and find the data to crunch. I started by asking Google Gemini to search and compile any research it could find related to this question. My question is too specific so I searched out publically available information covering traffic collisions in specific counties. (cite to DOT files to get the data). I started with West Texas because the New Mexico data I am interested in requires a formal request.
 

@@ -109,7 +109,9 @@ async function ingest() {
         });
 
         // 4. Write to Src
-        const baseName = path.basename(file, '.md').toLowerCase().replace(/\s+/g, '-');
+        const baseName = path.basename(file, '.md').toLowerCase()
+            .replace(/\s+/g, '-')          // Replace spaces with -
+            .replace(/[^a-z0-9-]/g, '');   // Remove other special chars
         const destFile = path.join(destination, `${baseName}.md`);
 
         // Reconstruct file

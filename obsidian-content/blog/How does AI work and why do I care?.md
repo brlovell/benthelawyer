@@ -1,15 +1,13 @@
 ---
-title: How does AI work and why do I care?
-summary: The benefits of better understanding how AI systems function and how chatbots answer your questions.
-date: 2026-01-02
-type: Op-Ed
+title: "How does AI work and why do I care?"
+summary: "The benefits of better understanding how AI systems function and how chatbots answer your questions."
+date: "2026-01-02"
+type: "Article"
 published: true
 ---
 
 
 FROM: Ben Lovell
-
-DATE: January 2, 2026
 
 RE: How does AI work and why do I care?
 

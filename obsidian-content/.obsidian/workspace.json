@@ -123,12 +123,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/Data Centers and AI's Impact on your Community.md",
+                "file": "blog/Data Centers and AI's Impact on Communities.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Data Centers and AI's Impact on your Community"
+              "title": "Data Centers and AI's Impact on Communities"
             }
           },
           {
@@ -137,12 +137,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/Data Centers and AI's Impact on your Community.md",
+                "file": "blog/Data Centers and AI's Impact on Communities.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Data Centers and AI's Impact on your Community"
+              "title": "Data Centers and AI's Impact on Communities"
             }
           },
           {
@@ -151,12 +151,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/Why You Need to Know How AI Works.md",
+                "file": "blog/Context Engineering for Attorneys.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Why You Need to Know How AI Works"
+              "title": "Context Engineering for Attorneys"
             }
           }
         ],
@@ -322,11 +322,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "adb1c96b56a756d3",
+  "active": "6ec64a29afe1a531",
   "lastOpenFiles": [
-    "attachments/Pasted image 20260129111657.png",
-    "blog/Data Centers and AI's Impact on your Community.md",
+    "blog/How does AI work and why do I care?.md",
+    "blog/Data Centers and AI's Impact on Communities.md",
     "blog/Context Engineering for Attorneys.md",
+    "blog/FEMA and Statutory Interpretation.md",
+    "attachments/Pasted image 20260129111657.png",
     "pages/about.md",
     "attachments/PXL_20260120_164417144-EDIT.jpg",
     "attachments/amarillo_cmv_dist.png",
@@ -342,7 +344,6 @@
     "blog/Creating Demonstratives with AI.md",
     "blog/Data Center Traffic Commercial Liability.md",
     "blog/Exerything exists in context.md",
-    "blog/FEMA and Statutory Interpretation.md",
     "blog/How I created trial preparation software.md",
     "blog/How to use AI as a practicing attorney - Level 1.md",
     "blog/Important jobs can be done with your email.md",

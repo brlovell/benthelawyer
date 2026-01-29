@@ -1,10 +1,11 @@
 ---
 title: "Context Engineering for Attorneys"
 summary: "How to change the way you ask AI tools questions to achieve substantially better results and reduce frustrating back and forth."
-date: 2026-01-14
-type: Op-Ed
+date: "2026-01-14"
+type: "Article"
 published: true
 ---
+From: Ben Lovell
 
 RE: How do attorneys get better answers from AI models?
 

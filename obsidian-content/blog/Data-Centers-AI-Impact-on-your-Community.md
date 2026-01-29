@@ -24,7 +24,7 @@ Probable increase in truck and car crashes with increased traffic. Data centers 
 
 ## DISCUSSION
 
-As I covered in [[Why you need to know how AI works]], Large Language Models (LLMs) require enormous amounts of energy and computer chips to work. LLMs are what most people are talking about when they discuss "AI." ChatGPT is an LLM, for example. The point is that AI requires a lot of resources.[^7]
+As I covered in [[How does AI work and why do I care?]], Large Language Models (LLMs) require enormous amounts of energy and computer chips to work. LLMs are what most people are talking about when they discuss "AI." ChatGPT is an LLM, for example. The point is that AI requires a lot of resources.[^7]
 
 ### I. Why is AI Treated Like an Arms Race?
 
