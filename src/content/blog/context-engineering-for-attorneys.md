@@ -83,4 +83,3 @@ Want to ensure the computer doesn't invent answers? Just ask:
 #### V. What now?
 The information we have covered are one of many variations on a theme, but you will achieve much better results using this information and examples as a guide. Context engineering is one of many skills that will increase your productivity as a practicing lawyer. The knowledge work economy is changing and we must adapt to the new paradigms and toolsets available to us--our clients depend on it.
 
-If you are interested in learning more about how to incorporate AI tools into your daily workflow, continue reading my series on on [How to use AI as a practicing attorney - Level 1](/blog/how-to-use-ai-as-a-practicing-attorney---level-1)

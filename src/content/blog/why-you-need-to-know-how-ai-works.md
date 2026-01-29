@@ -1,7 +1,9 @@
 ---
 title: How does AI work and why do I care?
-summary: The benefits of better understanding how AI systems function and how chatbots answer your questions.
-date: 2026-01-02
+summary: >-
+  The benefits of better understanding how AI systems function and how chatbots
+  answer your questions.
+date: 2026-01-02T00:00:00.000Z
 type: Op-Ed
 published: true
 ---
@@ -27,7 +29,7 @@ No. No you cannot. As stated above, Large Language Models run entirely on vector
 ### II. So, how do they work?
 By multiplying and processing incredibly large collections of numbers and representing connections in higher dimensional manifolds. It is simple and complicated all at once. 
 The LLM breaks down your question into tokens (collections of numbers representing the words you used) and embeds those tokens with connections. The model then performs calculations on those embeddings.
-![[Pasted image 20260129111657.png]]
+![Pasted image 20260129111657](/images/blog/pasted-image-20260129111657.png)
 Visualization of the embedding graph for the sentence "AI agents will be the most hot topic of artificial intelligence in 2025," from "LLM Embeddings Explained: A Visual and Intuitive Guide", 2025.[^1] 
 
 LLMs calculate how the words are related to each other to create these embeddings and connect them with other knowledge (more numbers) the models have stored internally. The result is a prediction of the next likeliest word. Wash, rinse, repeat in parallel.

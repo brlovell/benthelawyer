@@ -42,8 +42,6 @@ Completing construction, connecting to the grid, and powering up these proposed 
 
 For starters, possible increase in traffic collisions. A recent study of data from Holly Ridge, Louisiana, near Meta's "Hyperion" data center construction site, showed a 600% crash increase in the rural area. My own research shows a similar correlation in local road crashes in Randall and Potter County Texas near data center construction sites.
 
-Keep your eyes and ears peeled for increases in commercial vehicle collisions and electricity rate increases. If you or someone you know has been injured in and around these construction areas, contact ben@makerightlaw.com.
-
 
 [^1]: Russell, S. (2019). _Human Compatible: Artificial Intelligence and the Problem of Control_. Viking.
 
