@@ -5,18 +5,10 @@ const blog = defineCollection({
 	loader: glob({ pattern: '**/[^_]*.md', base: "./src/content/blog" }),
 	schema: z.object({
 		title: z.string(),
-		description: z.string().optional().transform((d, ctx) => {
-			if (d) return d;
-			// @ts-ignore
-			if (ctx?.data?.summary) return ctx.data.summary as string;
-			return "No description provided.";
-		}),
-		pubDate: z.preprocess((val) => val || undefined, z.coerce.date()).optional().transform((d, ctx) => {
-			if (d) return d;
-			// @ts-ignore
-			if (ctx?.data?.date) return new Date(ctx.data.date);
-			return new Date();
-		}),
+		description: z.string().optional(),
+		summary: z.string().optional(),
+		pubDate: z.coerce.date().optional(),
+		date: z.coerce.date().optional(),
 		updatedDate: z.coerce.date().optional(),
 		heroImage: z.string().optional(),
 		tags: z.array(z.string()).default([]),
@@ -25,7 +17,11 @@ const blog = defineCollection({
 		seriesOrder: z.number().optional(),
 		canonicalUrl: z.string().url().optional(),
 		substackUrl: z.string().url().optional(),
-	}),
+	}).transform(data => ({
+		...data,
+		description: data.description || data.summary || "No description provided.",
+		pubDate: data.pubDate || data.date || new Date(),
+	})),
 });
 
 const pages = defineCollection({

@@ -38,6 +38,7 @@ const posts = (await getCollection('blog'))
                       year: 'numeric',
                       month: 'short',
                       day: 'numeric',
+                      timeZone: 'UTC',
                     })}
                   </time>
                   {post.data.tags.length > 0 && (
